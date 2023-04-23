@@ -1,3 +1,6 @@
+# JSON configuration file for VSCode
+.vscode
+
 # Prerequisites
 *.d
 
