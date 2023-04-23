@@ -1,10 +1,17 @@
-Programa Encuesta Alumnos
-
 ¿Qué debe recibir mi programa?
 
 ¿Qué debe procesar, operar, realizar mi progrma?¿Qué estrategia debe seguir?
 
 ¿Qué debe imprimir?
+
+Programa Encuesta Alumnos
+/*
+Programa escrito por: Franco Ibañez
+Fecha: 22 de abril de 2023
+Versión: 0.1
+Nombre del archivo: encuesta_alumnos.txt
+Este programa recolecta las notas que cada grupo le asigna a cada una de las profesoras para, al final, imprimir un informe detallando el conjunto de notas y el promedio obtenido por cada profesora.
+*/
 
 Inicio Programa
 
