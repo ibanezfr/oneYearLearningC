@@ -1,3 +1,10 @@
+Consigna:
+La tarea en una escuela primaria consiste en que los 30 estudiantes
+del sexto grado califiquen a sus 3 maestras. Para ello, se deben dividir
+en grupos de 5 personas y cada grupo debe asignar una calificación entre 
+1 y 10 a cada maestra. Se necesita un informe que muestre para cada maestra
+las califiaciones otorgadas por cada grupo y su promedio.
+
 ¿Qué debe recibir mi programa?
 
 ¿Qué debe procesar, operar, realizar mi progrma?¿Qué estrategia debe seguir?
