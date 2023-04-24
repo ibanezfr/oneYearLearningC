@@ -1,0 +1,2 @@
+Assignment
+A cybercafe charges $0.50 per minute for using an internet-connected computer, and $0.10 per printed page. Additionally, there is an insurance fee of $0.05 * X, where X is 1% of the total time. The cafe wants to generate a receipt for a customer that details all these charges.
