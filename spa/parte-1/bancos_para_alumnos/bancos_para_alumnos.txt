@@ -1,0 +1,6 @@
+Consigna:
+Con base en la cantidad de bancos disponibles en un aula y el número de 
+estudiantes registrados para el curso, determinar si hay suficientes
+bancos para todos los estudiantes. En caso de que no haya suficientes,
+proporcionar información adicional sobre la cantidad de bancos que 
+necesitan ser agregados.
