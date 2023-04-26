@@ -1,0 +1,13 @@
+********************************************************************************
+Assignment:
+There is a vending machine for soft drinks that costs $1.25. It accepts coins 
+of $0.10, $0.25, $0.50, and $1, and performs the following operations:
+
+    a. Sale without change.
+    b. Sale with change.
+    c. No sale and returns the coins.
+
+The program must accept the coins and display a message indicating the operation
+carried out.
+
+********************************************************************************

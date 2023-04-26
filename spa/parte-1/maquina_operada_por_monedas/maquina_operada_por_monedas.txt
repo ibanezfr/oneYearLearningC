@@ -1,0 +1,14 @@
+********************************************************************************
+Consigna:
+Se dispone de una máquina expendedora de bebidas gaseosas que cuesta $1,25. Esta
+máquina acepta monedas de $0,10, $0,25, $0,50 y $1 y realiza las siguientes 
+operaciones:
+
+    a. Venta sin devolución de cambio.
+    b. Venta con devolución de cambio.
+    c. Cancelación de la operación con devolución de las monedas ingresadas.
+
+El programa debe aceptar las monedas ingresadas y mostrar un mensaje que indique
+la operación realizada.
+
+********************************************************************************
