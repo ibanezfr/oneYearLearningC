@@ -1,6 +1,8 @@
-Consigna:
-Con base en la cantidad de bancos disponibles en un aula y el número de 
-estudiantes registrados para el curso, determinar si hay suficientes
-bancos para todos los estudiantes. En caso de que no haya suficientes,
-proporcionar información adicional sobre la cantidad de bancos que 
-necesitan ser agregados.
+********************************************************************************
+Assignment:
+Based on the number of desks available in a classroom and the number of students
+registered for the course, determine if there are enough desks for all students. 
+In case there are not enough, provide addtional information about the number of 
+desks that need to be added.
+
+********************************************************************************
