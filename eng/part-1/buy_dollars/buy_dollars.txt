@@ -1,0 +1,16 @@
+********************************************************************************
+Assigment:
+An employee of a bank has a system that prints a ticket every time a customer 
+makes a purchase of dollars. The operation has an administrative comission based
+on the amount of dollars sold, which represents an additional cost for the 
+customer:
+
+a. 2% if it is more than 501 and less than 1501
+b. 2.5% if it is greater than 1501 and less than 3501
+c. 4% if it is greater than 3501
+
+The ticket shows the following details: the amount of dollars sold, and the 
+corresponding administrative comission rate for each of the aforementioned 
+cases.
+
+********************************************************************************

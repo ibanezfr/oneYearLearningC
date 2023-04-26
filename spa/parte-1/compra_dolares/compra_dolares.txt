@@ -1,0 +1,17 @@
+********************************************************************************
+Consigna: 
+Un empleado de banco cuenta con un sistema que emite un ticket cada vez que un
+cliente realiza una compra de dólares. Para la transacción se cobra una comisión
+administrativa, que varía en función de la cantidad de dólares vendidos, lo que
+implica una cantidad de costa adicional para el cliente. Las tarifas de comisión
+son las siguientes:
+
+a.2% si la cantidad vendida está entre 501 y 1500 dólares, inclusive.
+b.2,5% si la cantidad vendida es mayor a 1500 dólares y menor o igual a 3500
+dólares.
+c.4% si la cantidad vendida es mayor a 35000 dólares.
+
+El ticket que se imprime debe desglosar la información y mostrar la cantidad
+de dólares vendidos, así como la comisión correspondiente en cada caso.
+
+********************************************************************************
