@@ -1,0 +1,10 @@
+********************************************************************************
+Assigment:
+Create a program that simulates a simple calculator. The program should read two
+numbers and a character. If the character is a plus sign (+), it should print 
+the sum; if it is a minus sign (-), it should print the difference; if it is an 
+asterisk (*), it should display the product; if it is a slash (/), it should 
+print the quotient (if it's not possible to calculate, the program should issue
+a warning). To implemment this functionality, use the CASE control structure.
+
+********************************************************************************

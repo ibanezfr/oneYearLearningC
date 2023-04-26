@@ -1,0 +1,11 @@
+********************************************************************************
+Consigna:
+Crear un programa que simule una calculadora sencilla. El programa debe leer dos 
+números y un carácter. Si el carácter es un símbolo de suma (+), se deberá 
+imprimir la suma; si es un signo de resta (-), se imprimirá la diferencia; si
+es un asterisco (*), se mostrará el producto; si es una barra (/), se imprimirá
+el cociente (si no es posible calcularlo, el programa deberá emitir una
+advertencia). Para implementar esta funcionalidad, utilizar la estructura de 
+control CASO.
+
+********************************************************************************
