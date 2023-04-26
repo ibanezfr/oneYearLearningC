@@ -1,9 +1,12 @@
+********************************************************************************
 Consigna:
 La tarea en una escuela primaria consiste en que los 30 estudiantes
 del sexto grado califiquen a sus 3 maestras. Para ello, se deben dividir
 en grupos de 5 personas y cada grupo debe asignar una calificación entre 
 1 y 10 a cada maestra. Se necesita un informe que muestre para cada maestra
 las califiaciones otorgadas por cada grupo y su promedio.
+
+********************************************************************************
 
 ¿Qué debe recibir mi programa?
 
@@ -18,13 +21,16 @@ Autor: Franco Ibañez
 Fecha de creación: 22 de abril de 2023
 Versión: 0.1
 Nombre del archivo: encuesta_alumnos.txt
-Descripción: Este programa recolecta las notas que cada grupo le asigna a cada una de las profesoras para, al final, imprimir un informe detallando el conjunto de notas y el promedio obtenido por cada profesora.
+Descripción: Este programa recolecta las notas que cada grupo le asigna a cada
+una de las profesoras para, al final, imprimir un informe detallando el conjunto
+de notas y el promedio obtenido por cada profesora.
 */
 
 Inicio Programa
 
     //Variables
-    M1G1, M1G2, M1G3, M1G4, M2G5, M2G1, M2G2, M2G3, M2G4, M2G5, M3G1, M3G2, M3G3, M3G4, M3G5: Entero 2
+    M1G1, M1G2, M1G3, M1G4, M2G5, M2G1, M2G2, M2G3, M2G4, M2G5, M3G1, M3G2,
+    M3G3, M3G4, M3G5: Entero 2
     accM1, accM2, accM3: Entero 2
     prmM1, prmM2, prmM3: Float 4,2
 
@@ -95,11 +101,14 @@ Inicio Programa
             prmM3 := accM3 / 5
 
 
-            Imprimir: "La maestra M1 recibió M1G1 puntos del G1, M1G2 puntos del G2, M1G3 puntos del G3, M1G4 puntos del G4 y M1G5 del G5"
+            Imprimir: "La maestra M1 recibió M1G1 puntos del G1, M1G2 puntos del
+             G2, M1G3 puntos del G3, M1G4 puntos del G4 y M1G5 del G5"
 
-            Imprimir: "La maestra M2 recibió M2G1 puntos del G1, M2G2 puntos del G2, M2G3 puntos del G3, M2G4 puntos del G4 y M2G5 del G5"
+            Imprimir: "La maestra M2 recibió M2G1 puntos del G1, M2G2 puntos del
+             G2, M2G3 puntos del G3, M2G4 puntos del G4 y M2G5 del G5"
 
-            Imprimir: "La maestra M3 recibió M3G1 puntos del G1, M3G2 puntos del G2, M3G3 puntos del G3, M3G4 puntos del G4 y M3G5 del G5"
+            Imprimir: "La maestra M3 recibió M3G1 puntos del G1, M3G2 puntos del
+             G2, M3G3 puntos del G3, M3G4 puntos del G4 y M3G5 del G5"
 
             // Fin Operaciones con los datos
 
