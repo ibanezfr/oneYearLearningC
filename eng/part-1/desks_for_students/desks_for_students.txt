@@ -1,5 +1,8 @@
+********************************************************************************
 Assignment:
 Based on the number of desks available in a classroom and the number of 
 students registered for this course, determine whether there are enough
 desks for all students. If not, also report how many desks need to be 
 added.
+
+********************************************************************************
