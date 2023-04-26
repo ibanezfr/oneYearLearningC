@@ -1,0 +1,8 @@
+********************************************************************************
+Assignment:
+Create an algorithm that allows determining the greater number between two given
+values. How many conditions are necessary to evaluate the algorithm? Would it be 
+possible to create a version with fewer conditions? Additionally, could a 
+version be coded that requires fewer IF conditional statements?
+
+********************************************************************************
