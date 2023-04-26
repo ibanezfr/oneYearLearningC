@@ -1,7 +1,12 @@
-Consigna:
-/*
-Una compañía busca determinar el salario de un trabajador y generar un recibo que detalle los siguientes aspectos:
-    * Nombre y apellido del empleado, sueldo base, premio, gastos de comida, viáticos, días de ausencia, y la contribución a la obra social (3%), Ley 19032 (3%), y jubilación (11%).
-    * Se debe deducir una cantidad fija por cada día de ausencia del salario remunerativo. Los procentajes se calculan sobre el salario base, sin incluir viáticos, premios, o gastos de comida en el cálculo.
-*/
-
+********************************************************************************
+* CONSIGNA:                                                                    *
+* Una compañía busca determinar el salario de un trabajador y generar un       *
+* recibo que detalle los siguientes aspectos:                                  *
+*   * Nombre y apellido del empleado, sueldo base, premio, gastos de comida,   *
+*       viáticos, días de ausencia, y la contribución a la obra social (3%),   *
+*       Ley 19032 (3%), y jubilación (11%).                                    *
+*   * Se debe deducir una cantidad fija por cada día de ausencia del salario   *
+*       remunerativo. Los procentajes se calculan sobre el salario base,       *
+*       sin incluir viáticos, premios, o gastos de comida en el cálculo.       *
+*                                                                              *
+********************************************************************************

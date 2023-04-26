@@ -1,4 +1,11 @@
+********************************************************************************
 Assignment:
-A company wants to determine an employee's salary and generate a receipt that details the following aspects:
-    * Employee's name and surname, base salary, bonus, meal expenses, travel retirement (11%).
-    * A fixed amount be deducted from the remunerative salary for each day of abscence. Percentages are calculated based on hte base salary, excluding travel expenses, bonuses, or meal expenses from the calculation.
+A company wants to determine an employee's salary and generate a receipt that 
+details the following aspects:
+    * Employee's name and surname, base salary, bonus, meal expenses, 
+travel retirement (11%).
+    * A fixed amount be deducted from the remunerative salary for each day 
+of abscence. Percentages are calculated based on hte base salary, excluding 
+travel expenses, bonuses, or meal expenses from the calculation.
+
+********************************************************************************
