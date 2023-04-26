@@ -1,0 +1,7 @@
+********************************************************************************
+Consigna:
+Se requiere crear un programa que permita determinar si la suma de cuatro 
+números reales es positia, negativa o cero. El programa debe imprimir un mensaje
+indicando el resultado obtenido.
+
+********************************************************************************

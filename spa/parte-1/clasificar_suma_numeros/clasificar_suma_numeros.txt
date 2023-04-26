@@ -1,0 +1,7 @@
+********************************************************************************
+Assignment:
+A program is needed to determine whether the sum of four real numbers is 
+positive, negative, or zero. The program should print a message indicating the 
+result obtained.
+
+********************************************************************************
