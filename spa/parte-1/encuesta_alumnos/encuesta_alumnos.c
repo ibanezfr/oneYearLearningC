@@ -4,7 +4,8 @@
 int main ( ){
 
     //Variables
-    int M1G1, M1G2, M1G3, M1G4, M1G5, M2G1, M2G2, M2G3, M2G4, M2G5, M3G1, M3G2, M3G3, M3G4, M3G5;
+    int M1G1, M1G2, M1G3, M1G4, M1G5, M2G1, M2G2, M2G3, M2G4, M2G5, 
+    M3G1, M3G2, M3G3, M3G4, M3G5;
     int accM1, accM2, accM3;
     float prmM1, prmM2, prmM3;
 
@@ -102,7 +103,7 @@ int main ( ){
             printf("\t %d puntos del G1\n",M3G1);    
             printf("\t %d puntos del G2\n",M3G2);    
             printf("\t %d puntos del G3\n",M3G3);    
-            printf("\t %d puntos del G4\n",M3G4);    
+            printf("\t %d puntos del G4\n",M3G4);
             printf("\t %d puntos del G5\n",M3G5);   
             printf("\t\t Su promedio es: %.2f puntos\n",prmM3);
             // Fin Impresión de resultados
@@ -110,3 +111,4 @@ int main ( ){
 
     return 0;
 }
+
