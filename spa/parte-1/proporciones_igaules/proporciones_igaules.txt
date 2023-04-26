@@ -1,0 +1,7 @@
+********************************************************************************
+Consigna:
+Comprobar si la suma de cualquier par de tres números dados es igual al valor 
+del tercer número. Si se cumple esta condición, imprimir "Iguales"; de lo 
+contrario, imprimir "Distintos.
+
+********************************************************************************

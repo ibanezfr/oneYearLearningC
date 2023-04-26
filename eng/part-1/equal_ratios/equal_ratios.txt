@@ -1,0 +1,7 @@
+********************************************************************************
+Assigment: 
+Determine wheter the sum of any pair of three given numbers is equal to the 
+third one. If this condition is met, print "Equals"; otherwise, print 
+"Different".
+
+********************************************************************************
