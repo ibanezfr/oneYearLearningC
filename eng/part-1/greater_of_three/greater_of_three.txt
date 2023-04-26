@@ -1,0 +1,7 @@
+********************************************************************************
+Assignment:
+Develop an algorithm to determine the largest of three given numbers.How many 
+conditions are required to evaluate the algorithm? Is it possible to create one
+that requires fewer condtions? Can one be coded that uses fewer IF statements?
+
+********************************************************************************

@@ -1,0 +1,8 @@
+********************************************************************************
+Consigna:
+Elaborar un algoritmo para el número más grande de entre 3 números dados. 
+¿Cuántas condiciones son necesarias para evaluar el algoritmo? ¿Es posible crear
+uno que requiera menos condiciones? ¿Se puede codificar uno que utilice menos
+sentencias IF? 
+
+********************************************************************************
