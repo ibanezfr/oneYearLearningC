@@ -1,0 +1,19 @@
+********************************************************************************
+Consigna:
+Un atleta pierde 100 gramos de peso por cada 50 metros que corre. Su entrenador
+quiere un programa que pueda recibir los siguientes datos:
+    
+    * Peso del corredor
+    * Longitud del circuito (nunca menor a 50 metros)
+    * Tiempo empleado (en segundos)
+
+El programa debe realizar lo siguiente:
+    a. Calcular cuántos gramos de peso pierde el corredor y su peso final.
+    b. Si el corredor pierde más de 300 gramos de pesi, el programa debe indicar
+que necesita vitamina A. Si pierde más de 450 gramos, también debe indicar que 
+necesita vitamina C.
+    c. Conociendo que el tiempo récord para el circuito olímpico es de 25 
+segundos y para el circuito panamericano es de 15 segundos, el programa debe 
+determinar si el corredor ha mejorado alguno de estos récords.
+
+********************************************************************************

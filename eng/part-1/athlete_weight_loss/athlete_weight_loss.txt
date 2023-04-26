@@ -1,0 +1,20 @@
+********************************************************************************
+Assignment:
+An athlete loses 100 grams of weight for every 50 meters he runs. His coach 
+wants a program that can receive the following data:
+
+    * Weight of the runer
+    * Length of the track (never less than 50 meters)
+    * Time taken (in seconds)
+
+The program should do the following:
+
+    a. Calculate how many grams of weight the runner loses and his final weight.
+    b. If the runner loses more than 300 grams of weight, the program should 
+indicate that he needs vitamin A. If he loses more than 450 grams, it shuold 
+also indicate that he needs vitamin C.
+    c.Knowing that the record time for the Olympic circuit  is 25 seconds and 
+for the Pan American circuit is 15 seconds, the program should determine if the 
+runer has beaten either of these records.
+
+********************************************************************************
