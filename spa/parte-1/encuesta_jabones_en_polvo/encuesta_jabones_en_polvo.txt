@@ -1,6 +1,8 @@
+********************************************************************************
 Consigna:
 Se llevó a cabo una investigación para descubrir las marcas de detergente
 en polvo más populares en una población específica. De todas las personas 
 encuestadas, se nombraron 7 marcas diferentes. Se necesita generar un informe
 que detalle, para cada marca, la cantidad de personas que la mencionaron y 
 el porcentaje que representa ese número.
+********************************************************************************

@@ -1,5 +1,8 @@
+********************************************************************************
 Assignment:
 A survey is conducted to determine the preferred laundry detergents in a 
 particular population. Out of all suveyed individuals, 7 brands were mentioned. 
 A report is desired that details, for each brand, the number of individuals 
 and the percentage that number represents.
+
+********************************************************************************
