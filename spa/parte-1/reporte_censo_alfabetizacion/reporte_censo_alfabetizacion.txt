@@ -1,3 +1,4 @@
+********************************************************************************
 Consigna:
 En el último censo se preguntó sobre el grado de alfabetización de la población
 mayor de 18 años, utilizando cuatro categorías: sin escolaridad, primaria
@@ -26,3 +27,5 @@ Total de  hombres encuestados: H.
     * Universitaria completa: U2%
 
 Total de Encuestados: W
+
+********************************************************************************

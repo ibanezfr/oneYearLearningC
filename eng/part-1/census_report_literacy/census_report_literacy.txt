@@ -1,0 +1,31 @@
+********************************************************************************
+Assignment:
+In the latest census, the degree of literacy of the population over 18 years 
+old was asked, using four categories: no schooling, primary school completed, 
+secondary school completed, and university completed. Information is available 
+on the number of men and women for each category and a report with partial 
+percentages is desired. The report should include the toal number of women 
+surveyed (M) and thee corresponding percentages for each category for women. 
+It should also include the total number of men surveyd (H) and the corresponding
+percentages for each category for men. In addition, the total number of survey 
+respondents (W) should be provided.
+
+Report outiline:
+
+Total number of women surveyed: M.
+
+    * No schooling: N1%
+    * Primary school completed: C1%
+    * Secondary school completed: S1%
+    * University completed: U1%
+
+Total number of men surveyed: H.
+
+    * No schooling: N2%
+    * Primary school completed: C2%
+    * Secondary school completed: S2%
+    * University completed: U2%
+
+Total number of survey respondents: W
+
+********************************************************************************

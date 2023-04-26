@@ -4,4 +4,5 @@ At a primary school, 30 sixth-grade students are asked to rate their 3
 teachers. To do this, they must form groups of 5 and assign a score between
 1 and 10 to each teacher. A report is required detailing, for each teacher, 
 the score assigned by each group and the average score obtained.
+
 ********************************************************************************
