@@ -1,5 +1,11 @@
 ********************************************************************************
 Assignment:
-
+From an RS232 device, a program reads characters sent by a sensor. Readings are 
+done in 5-character buffers, which must arrive in a fixed format: the first 
+character must be X and the last one must be 0. Read sequences that comply with 
+the format are considered correct. The special sequence '&&&&&' marks the end of
+the transmissions (let's call it FDE), and any sequence that is different from
+FDE and not correct is considered invalid. At the end of the process, a report 
+is printed indicating the percentages of correct and invalid readings received.
 
 ********************************************************************************

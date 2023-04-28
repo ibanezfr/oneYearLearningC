@@ -1,5 +1,12 @@
 ********************************************************************************
 Consigna: 
-
+Un programa lee caracteres enviados por un sensor desde un dispositivo RS232. 
+Las lecturas se hacen en bloques de 5 caracteres (buffer) y deben tener un
+formato específico: el primer carácter debe ser X y el último debe ser 0.
+Las secuencias que cumplan con este formato se consideran válidas, mientras que
+la secuencia especial "&&&&&" indica el fin de los envíos (a la que llamaremos 
+FDE). Cualquier secuencia diferente de FDE que no sea válida se considera 
+inválida. Al final del proceso, se genera un informe que indica el porcentaje 
+de lecturas correctas e inválidas recibidas.
 
 ********************************************************************************
