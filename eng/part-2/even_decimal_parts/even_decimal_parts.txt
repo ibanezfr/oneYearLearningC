@@ -1,5 +1,7 @@
 ********************************************************************************
 Assignment:
-
+Real numbers are read until a 0 appears. Determine and print how many of them 
+have an even non-decimal part and the percentage they represent with respect 
+to the total number of numbers read. Also print this last quantity.
 
 ********************************************************************************

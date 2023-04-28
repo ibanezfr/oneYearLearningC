@@ -1,5 +1,8 @@
 ********************************************************************************
 Consigna: 
-
+Se leen números reales hasta que aparece un 0. Se debe determinar e imprimir la 
+cantidad de números que tienen su parte no decimal par y el porcentaje que
+representan con respecto a la cantidad total de números leídos. 
+Además, se debe imprimir la cantidad total de números leídos.
 
 ********************************************************************************
