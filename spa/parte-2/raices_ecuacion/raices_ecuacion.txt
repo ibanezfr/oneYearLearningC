@@ -1,5 +1,6 @@
 ********************************************************************************
 Consigna: 
-
+Crear un programa que calcule e imprima las raíces reales de una ecuación de 
+segundo grado o muestre un mensaje indicando que dichas raíces no existen.
 
 ********************************************************************************
