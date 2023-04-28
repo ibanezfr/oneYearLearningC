@@ -1,5 +1,12 @@
 ********************************************************************************
 Assignment:
-
+There are two character variables, each with a maximum length of 200 characters,
+and they are read character by character from the keyboard. The goal is to 
+determine if these variables are equal, taking into account that spaces are not 
+considered unless they are between two non-blank characters, in which case they 
+are counted as one. In addition, it is desired to know if either variable begins
+with "AB" in the first two positions and ends with "ON" in the last positions. 
+The variables may not have the same length. Finally, a message should be printed
+with the obtained results.
 
 ********************************************************************************

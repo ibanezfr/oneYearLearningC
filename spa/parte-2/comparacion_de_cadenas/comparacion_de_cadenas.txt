@@ -1,5 +1,13 @@
 ********************************************************************************
 Consigna: 
-
+Se tienen dos variables de tipo carácter, cada una con una longitud máxima de 
+200 caracteres, y se leen de a un carácter por el teclado. El objetivo es 
+determinar si estas variables son iguales, teniendo en cuenta que los espacios 
+en blanco no se consideran a menos que se encuentren entre dos caracteres no 
+blancos, en cuyo caso se contabilizan como uno solo. Además, se desea saber si 
+alguna de las variables comienza con "AB" en las dos primeras posiciones y 
+finaliza con "ON" en las últimas posiciones. Es posible que las variables no 
+tengan la misma longitud. Finalmente, se debe imprimir un mensaje con los 
+resultados obtenidos.
 
 ********************************************************************************
