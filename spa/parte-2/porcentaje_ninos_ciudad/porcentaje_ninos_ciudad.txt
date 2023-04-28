@@ -1,5 +1,10 @@
 ********************************************************************************
 Consigna: 
-
-
+Se lleva a cabo una encuesta en tres ciudades de un mismo distrito con el 
+objetivo de determinar cuál de ellas cuenta con el mayor porcentaje de niños 
+menores de 5 años. Se debe imprimir un mensaje indicando cuál ciudad obtuvo el 
+resultado más alto. Se sabe que la ciudad 1 tiene 1000 niños menores de
+10 años, la ciudad 2 tiene 1500 niños menores de 10 años y 
+la ciudad 3 tiene 1530 niños menores de 10 años."
+ 
 ********************************************************************************

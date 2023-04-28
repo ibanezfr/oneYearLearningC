@@ -1,5 +1,9 @@
 ********************************************************************************
 Assignment:
-
+A survey is conducted in three cities of the same district to determine which 
+one has the highest percentage of boys under 5 years old. Print a message
+indicating the result. It is known that city 1 has 1000 boys under 10 years old,
+city 2 has 1500 boys under 10 years old, and city 3 has 1530 boys 
+under 10 years old."
 
 ********************************************************************************
