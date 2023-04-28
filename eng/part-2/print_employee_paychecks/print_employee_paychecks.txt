@@ -1,5 +1,6 @@
 ********************************************************************************
 Assignment:
-
+Rewrite the part 1 program about the payslip to include the 50 employees of 
+the company.
 
 ********************************************************************************

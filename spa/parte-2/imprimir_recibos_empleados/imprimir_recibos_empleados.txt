@@ -1,5 +1,6 @@
 ********************************************************************************
 Consigna: 
-
+Reescribir el programa de la parte 1 sobre el recibo de sueldo, para contemple 
+a los 50 empleados de la empresa.
 
 ********************************************************************************
