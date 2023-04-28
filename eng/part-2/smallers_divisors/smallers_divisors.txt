@@ -1,5 +1,8 @@
 ********************************************************************************
 Assignment:
-
+We need to implement a program that calculates all the divisors of a given 
+number that are smaller than the number itself. It is important to remember that
+all the divisors of a number, except for the number itself, are smaller than 
+half of that number.
 
 ********************************************************************************

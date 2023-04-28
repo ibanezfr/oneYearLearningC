@@ -1,5 +1,8 @@
 ********************************************************************************
 Consigna: 
-
+Se requiere implementar un programa que calcule todos los divisores de un número
+dado que sean menores que el número en sí. Es importante recordar que todos los 
+divisores de un número, excepto el propio número, son menores que la mitad de 
+este último.
 
 ********************************************************************************
