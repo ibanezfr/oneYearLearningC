@@ -1,7 +1,5 @@
 ********************************************************************************
 Consigna: 
-Crear un programa que, al recibir dos números M y N, imprima en orden ascendente
-las N primeras potencias de M, comenzando desde la potencia 0.
-(Utilizar la función primitiva POTENCIA)
+
 
 ********************************************************************************

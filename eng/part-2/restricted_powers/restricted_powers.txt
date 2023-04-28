@@ -1,7 +1,5 @@
 ********************************************************************************
 Assignment:
-Implement a program that reads two numbers M and N and prints the first N 
-powers of M, starting from power 0.
-(Use the primitive function POWER).
+
 
 ********************************************************************************
