@@ -1,5 +1,6 @@
 ********************************************************************************
 Consigna: 
-
+Desarrollar un programa que lea un número N y determine el número máximo entre 
+los siguientes N valores ingresados.
 
 ********************************************************************************

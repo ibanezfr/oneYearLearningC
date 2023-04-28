@@ -1,5 +1,6 @@
 ********************************************************************************
 Assignment:
-
+Implement a program that reads a number N and calculates the maximum of the
+following N numbers read.
 
 ********************************************************************************
