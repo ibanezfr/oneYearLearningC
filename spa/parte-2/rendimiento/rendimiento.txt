@@ -1,5 +1,11 @@
 ********************************************************************************
 Consigna: 
-
+Los profesores de matemáticas del tercer año de todas las carreras en una
+institución de educación terciaria desean calcular el promedio de calificaciones
+para cada una de las 5 comisiones, así como el promedio general.
+Para lograr esto, se solicita a cada estudiante que tome un examen para 
+registrar su calificación. Todos los promedios se calculan en función del
+número de estudiantes presentes que tuvieron el examen con ellos en el momento 
+del cálculo. Los resultados deben imprimirse redondeados al entero más cercano.
 
 ********************************************************************************
