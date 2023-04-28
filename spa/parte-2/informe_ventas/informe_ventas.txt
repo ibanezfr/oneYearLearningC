@@ -1,5 +1,12 @@
 ********************************************************************************
 Consigna: 
-
+Un negocio dispone de 4 vendedores para comercializar 3 tipos de productos.
+Después de 7 días, el dueño desea conocer cierta información sobre el desempeño 
+de los vendedores, en concreto:
+a) La cantidad total de productos vendidos por cada vendedor, sin importar el 
+tipo de producto.
+b) El monto de la venta más alta del artículo 1 realizada por el vendedor 3.
+c) El promedio de ventas por producto.
+d) El promedio de ventas por vendedor.
 
 ********************************************************************************

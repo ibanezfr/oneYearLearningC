@@ -1,5 +1,9 @@
 ********************************************************************************
 Assignment:
-
+A business has 4 salespeople to sell its 3 types of products. After 7 days, the owner wants to gather specific information about the performance of the salespeople, including:
+a) The total number of products sold by each salesperson, regardless of the type of product.
+b) The amount of the highest sale for item 1 made by salesperson 3.
+c) The average sales amount per product.
+d) The average sales amount per salesperson.
 
 ********************************************************************************
