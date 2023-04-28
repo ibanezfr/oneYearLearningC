@@ -1,5 +1,10 @@
 ********************************************************************************
 Consigna: 
-
+Se lleva a cabo una encuesta en tres ciudades dentro del mismo distrito para 
+determinar cuál de ellas cuenta con el mayor porcentaje de niños menores de 5
+años. Imprimir un mensaje que indique cuál ciudad resultó tener la mayor 
+cantidad de niños en este grupo etario. Se tiene conocimiento de que la ciudad 
+resultó tener la mayor cantidad de niños menores de 10 años, la ciudad 2 con 
+15000 niños menores de 10 años y la ciudad 3 con 1530 niños menores de 10 años.
 
 ********************************************************************************
