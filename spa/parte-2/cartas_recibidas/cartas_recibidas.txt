@@ -1,5 +1,8 @@
 ********************************************************************************
 Consigna: 
-
+Se requiere un program que simule la clasificación de cartas recibidas en una 
+empresa, asignándoles un número correlativo para cada sección comenzando desde
+0. El informe generado por el programa deberá detallar la cantidad de cartas 
+recibidas ese día para cada sección y en total.
 
 ********************************************************************************
