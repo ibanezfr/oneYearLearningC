@@ -1,5 +1,6 @@
 ********************************************************************************
 Consigna: 
-
+Crear un programa que permita encontrar el resto de la división entre dos 
+números enteros positivos utilizando restas sucesivas.
 
 ********************************************************************************

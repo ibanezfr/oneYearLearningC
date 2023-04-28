@@ -1,5 +1,6 @@
 ********************************************************************************
 Assignment:
-
+Develop a program that allows me to find the remainder of the division between 
+two positive integers using successive subtractions.
 
 ********************************************************************************
