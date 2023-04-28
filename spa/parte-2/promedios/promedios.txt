@@ -1,5 +1,7 @@
 ********************************************************************************
 Consigna: 
-
+Calcular el promedio de calificaciones de una clase de 40 alumnos y mostrar el 
+resultado redondeado al número entero más cercano (si hay decimales, 
+eliminarlos).
 
 ********************************************************************************

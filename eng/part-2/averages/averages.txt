@@ -1,10 +1,6 @@
 ********************************************************************************
 Assignment:
-The Math teachers of the third year of all the majors in a tertiary education 
-institution wish to calculate the average grade for each of the 5 comissions, as 
-well as the overall average. To achieve this, each student is requested to take
-an exam to record their grade. All averages are calculated based on the number 
-of students present who had the exam with them at the time of calculation. The 
-results should be printed rounded to the nearest integer.
+We want to calculate the average grade of a group of 40 students. Print the
+result as an integer (if there is a decimal part, round down).
 
 ********************************************************************************
