@@ -1,7 +1,7 @@
 ********************************************************************************
-Assignment:
-A program is needed to determine whether the sum of four real numbers is 
-positive, negative, or zero. The program should print a message indicating the 
-result obtained.
+Consigna:
+Se necesita un programa para determinar si la suma de cuatro números reales es
+positiva, negativa o cero. El programa debe imprimir un mensaje que indique 
+el resultado obtenido.
 
 ********************************************************************************

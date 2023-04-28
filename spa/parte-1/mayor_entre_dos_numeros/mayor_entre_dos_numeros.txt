@@ -4,4 +4,5 @@ Elaborar un algoritmo que permita determinar el número mayor entre dos valores
 dados. ¿Cuántas condiciones son necesarias para evaluar el algoritmo? ¿Sería 
 posible crear una versión con menos condiciones? Además, ¿ser podría codificar 
 una versión que requiera menos declaraciones de estructuras condicionales SI?
+
 ********************************************************************************

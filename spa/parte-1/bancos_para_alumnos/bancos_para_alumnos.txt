@@ -1,8 +1,8 @@
 ********************************************************************************
-Assignment:
-Based on the number of desks available in a classroom and the number of students
-registered for the course, determine if there are enough desks for all students. 
-In case there are not enough, provide addtional information about the number of 
-desks that need to be added.
+Consigna:
+Basándose en el número de pupitres disponibles en un aula y el número de
+estudiantes registrados para este curso, determine si hay suficientes 
+pupitres para todos los estudiantes. Si no es así, informe también cuántos 
+pupitres necesitan ser agregados.
 
 ********************************************************************************
