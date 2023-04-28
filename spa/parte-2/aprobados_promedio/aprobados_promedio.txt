@@ -1,5 +1,11 @@
 ********************************************************************************
 Consigna: 
-
+En una institución educativa de nivel terciario, los profesores de Matemáticas 
+del tercer año de todas las carreras desean calcular el promedio de notas de 
+cada una de las 5 comisiones, así como también el promedio general. Para lograr 
+esto, se solicita a cada estudiante que realice un examen para registrar su 
+nota. Todos los promedios se calculan sobre la cantidad de alumnos presentes que 
+tenían el examen consigo al momento del cálculo. Los resultados debe impresos 
+redondeados el entero más cercano.
 
 ********************************************************************************
