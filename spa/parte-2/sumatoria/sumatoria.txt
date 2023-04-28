@@ -1,5 +1,8 @@
 ********************************************************************************
 Consigna: 
-
+Se tiene una secuencia de números reales y se desea obtener e imprimir la suma 
+de sus elementos, el valor absoluto de dicha suma, y la suma de los valores 
+absolutos de cada elemento de la secuencia. La secuencia termina cuando aparece 
+su quinto elemento negativo.
 
 ********************************************************************************

@@ -1,5 +1,8 @@
 ********************************************************************************
 Assignment:
-
+Given a sequence of real numbers, we want to obtain and print the sum of its 
+elements, the absolute value of that sum, and the sum of the absolute values of 
+each element in the sequence. The sequence ends when its fifth negative element 
+appears.
 
 ********************************************************************************
