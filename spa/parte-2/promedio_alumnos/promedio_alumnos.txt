@@ -1,5 +1,7 @@
 ********************************************************************************
 Consigna: 
-
+Se desea calcular el promedio de notas de una comisión conformada por 40 alumnos
+y se requiere imprimir el resultado como un número entero. Si el promedio tiene
+parte decimal, esta debe ser eliminada.
 
 ********************************************************************************

@@ -1,0 +1,7 @@
+********************************************************************************
+Assignment:
+We need to calculate the average grade of a group of 40 students and print the
+result as a whole number. If the average has a decimal part, it should be 
+truncated.
+
+********************************************************************************
