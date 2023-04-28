@@ -1,5 +1,6 @@
 ********************************************************************************
 Assignment:
-
+Implement a program that reads three numbers P, Q, R and prints the powers
+of P starting from the one in position Q up to R.
 
 ********************************************************************************

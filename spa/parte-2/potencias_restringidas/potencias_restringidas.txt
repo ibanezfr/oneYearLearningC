@@ -1,5 +1,6 @@
 ********************************************************************************
 Consigna: 
-
+Escribe un programa que lea tres números P, Q y R e imprima las potencias de P 
+desde la posición Q hasta la R.
 
 ********************************************************************************
