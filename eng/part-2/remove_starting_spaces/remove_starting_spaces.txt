@@ -1,5 +1,6 @@
 ********************************************************************************
 Assignment:
-
+Develop a program that removes all leading whitespace characters from a string 
+of characters.
 
 ********************************************************************************

@@ -1,5 +1,6 @@
 ********************************************************************************
 Consigna: 
-
+Se necesita desarrollar un programa que elimine cualquier espacio en blanco que 
+esté al inicio de una cadena de caracteres.
 
 ********************************************************************************
