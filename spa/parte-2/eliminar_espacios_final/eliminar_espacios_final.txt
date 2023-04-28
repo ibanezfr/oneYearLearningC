@@ -1,5 +1,6 @@
 ********************************************************************************
 Consigna: 
-
+Desarrollar un programa que remueva todos los espacios en blanco ubicados al 
+final de una cadena de caracteres.
 
 ********************************************************************************

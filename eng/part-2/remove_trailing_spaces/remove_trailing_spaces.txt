@@ -1,5 +1,6 @@
 ********************************************************************************
 Assignment:
-
+Implement a program that removes all trailing whitespace from a string of 
+characters.
 
 ********************************************************************************
