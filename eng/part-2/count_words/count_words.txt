@@ -1,5 +1,11 @@
 ********************************************************************************
 Assignment:
-
-
+We need a program that prompts the user to enter a text, character by character.
+The text ends with a period and words are separated by one or more whitespace 
+characters. The following tasks are required:
+● Count the number of words that contain "cas" starting from the third letter.
+● Count the number of words that have the letters "c", "a", and "s" in any order
+and display the percentage they represent of the total number of words.
+● Determine the length of the longest word.
+(Do not use primitives functions)
 ********************************************************************************

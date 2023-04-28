@@ -1,5 +1,13 @@
 ********************************************************************************
 Consigna: 
-
-
+Se requiere un programa que solicite al usuario ingresar un texto, letra por
+letra. El texto finaliza con un punto y las palabras se separan por uno o más 
+espacios en blanco. Se solicita realizar las siguientes tareas:
+● Contar la cantidad de palabras que contengan "cas" a partir de la tercera 
+letra.
+● Contar la cantidad de palabras que tengan las letras "c", "a" y "s" en 
+cualquier orden de presentación y mostrar el porcentaje que representan del
+total de palabras.
+● Indicar cuál es la longitud de la palabra más larga.
+(No utilizar funciones primitivas.)
 ********************************************************************************
