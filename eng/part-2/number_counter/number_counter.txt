@@ -1,5 +1,8 @@
 ********************************************************************************
-Assignment:
-
+Assignm
+The user enters a set of numbers one by one through the keyboard. The program
+should count how many times the values 10, 20, 30, and 40 appear, as well as 
+how many different numbers besides these values are presented.
+The process ends when "-1" is entered for the third time.
 
 ********************************************************************************

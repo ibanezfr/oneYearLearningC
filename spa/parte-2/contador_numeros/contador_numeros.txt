@@ -1,5 +1,8 @@
 ********************************************************************************
 Consigna: 
-
+El usuario ingresa un conjunto de números uno por uno a través del teclado. 
+Se debe contar cuántas veces aparecen los valores 10, 20, 30 y 40, así como 
+también cuántos números diferentes de estos valores se presentan.
+El proceso termina cuando se ingresa "-1" por tercera vez.
 
 ********************************************************************************
