@@ -8,3 +8,18 @@ resultado más alto. Se sabe que la ciudad 1 tiene 1000 niños menores de
 la ciudad 3 tiene 1530 niños menores de 10 años."
  
 ********************************************************************************
+¿Qué debe recibir mi programa?
+
+¿Qué debe procesar, operar, realizar mi progrma?¿Qué estrategia debe seguir?
+
+¿Qué debe imprimir?
+
+/*
+Nombre del Programa: 
+Autor:
+Fecha de creación: 
+Fecha de modificación: 
+Versión:
+Nombre del archivo:
+Descripción:
+*/

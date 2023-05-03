@@ -6,3 +6,19 @@ all the divisors of a number, except for the number itself, are smaller than
 half of that number.
 
 ********************************************************************************
+What should my program receive as input?
+
+What processing, operations, or tasks should my program perform? What strategy
+should it follow?
+
+What output should my program produce?
+
+/*
+Program Name:
+Author:
+Creation Date:
+Modification Date:
+Version:
+File Name:
+Description:
+*/

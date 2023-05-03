@@ -18,3 +18,19 @@ for the Pan American circuit is 15 seconds, the program should determine if the
 runer has beaten either of these records.
 
 ********************************************************************************
+What should my program receive as input?
+
+What processing, operations, or tasks should my program perform? What strategy
+should it follow?
+
+What output should my program produce?
+
+/*
+Program Name:
+Author:
+Creation Date:
+Modification Date:
+Version:
+File Name:
+Description:
+*/

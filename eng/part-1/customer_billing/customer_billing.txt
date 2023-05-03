@@ -6,3 +6,19 @@ $0.05 * X, where X is 1% of the total time. The cafe wants to generate a
 receipt for a customer that details all these charges.
 
 ********************************************************************************
+What should my program receive as input?
+
+What processing, operations, or tasks should my program perform? What strategy
+should it follow?
+
+What output should my program produce?
+
+/*
+Program Name:
+Author:
+Creation Date:
+Modification Date:
+Version:
+File Name:
+Description:
+*/

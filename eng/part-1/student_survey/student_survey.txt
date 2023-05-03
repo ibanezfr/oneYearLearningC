@@ -6,3 +6,19 @@ teachers. To do this, they must form groups of 5 and assign a score between
 the score assigned by each group and the average score obtained.
 
 ********************************************************************************
+What should my program receive as input?
+
+What processing, operations, or tasks should my program perform? What strategy
+should it follow?
+
+What output should my program produce?
+
+/*
+Program Name:
+Author:
+Creation Date:
+Modification Date:
+Version:
+File Name:
+Description:
+*/

@@ -6,3 +6,19 @@ A report is desired that details, for each brand, the number of individuals
 and the percentage that number represents.
 
 ********************************************************************************
+What should my program receive as input?
+
+What processing, operations, or tasks should my program perform? What strategy
+should it follow?
+
+What output should my program produce?
+
+/*
+Program Name:
+Author:
+Creation Date:
+Modification Date:
+Version:
+File Name:
+Description:
+*/

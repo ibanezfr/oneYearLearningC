@@ -9,3 +9,19 @@ FDE and not correct is considered invalid. At the end of the process, a report
 is printed indicating the percentages of correct and invalid readings received.
 
 ********************************************************************************
+What should my program receive as input?
+
+What processing, operations, or tasks should my program perform? What strategy
+should it follow?
+
+What output should my program produce?
+
+/*
+Program Name:
+Author:
+Creation Date:
+Modification Date:
+Version:
+File Name:
+Description:
+*/

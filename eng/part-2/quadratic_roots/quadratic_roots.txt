@@ -4,3 +4,19 @@ Develop a program that calculates and prints the real roots of a quadratic
 equation or displays a message indicating that no such roots exist.
 
 ********************************************************************************
+What should my program receive as input?
+
+What processing, operations, or tasks should my program perform? What strategy
+should it follow?
+
+What output should my program produce?
+
+/*
+Program Name:
+Author:
+Creation Date:
+Modification Date:
+Version:
+File Name:
+Description:
+*/

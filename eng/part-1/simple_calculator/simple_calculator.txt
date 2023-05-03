@@ -8,3 +8,19 @@ print the quotient (if it's not possible to calculate, the program should issue
 a warning). To implemment this functionality, use the CASE control structure.
 
 ********************************************************************************
+What should my program receive as input?
+
+What processing, operations, or tasks should my program perform? What strategy
+should it follow?
+
+What output should my program produce?
+
+/*
+Program Name:
+Author:
+Creation Date:
+Modification Date:
+Version:
+File Name:
+Description:
+*/

@@ -4,3 +4,19 @@ Implement a program that reads three numbers P, Q, R and prints the powers
 of P starting from the one in position Q up to R.
 
 ********************************************************************************
+What should my program receive as input?
+
+What processing, operations, or tasks should my program perform? What strategy
+should it follow?
+
+What output should my program produce?
+
+/*
+Program Name:
+Author:
+Creation Date:
+Modification Date:
+Version:
+File Name:
+Description:
+*/

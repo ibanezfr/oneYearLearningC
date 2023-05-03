@@ -5,3 +5,18 @@ las N primeras potencias de M, comenzando desde la potencia 0.
 (Utilizar la función primitiva POTENCIA y en otra solución no usarla)s
 
 ********************************************************************************
+¿Qué debe recibir mi programa?
+
+¿Qué debe procesar, operar, realizar mi progrma?¿Qué estrategia debe seguir?
+
+¿Qué debe imprimir?
+
+/*
+Nombre del Programa: 
+Autor:
+Fecha de creación: 
+Fecha de modificación: 
+Versión:
+Nombre del archivo:
+Descripción:
+*/

@@ -5,3 +5,19 @@ have an even non-decimal part and the percentage they represent with respect
 to the total number of numbers read. Also print this last quantity.
 
 ********************************************************************************
+What should my program receive as input?
+
+What processing, operations, or tasks should my program perform? What strategy
+should it follow?
+
+What output should my program produce?
+
+/*
+Program Name:
+Author:
+Creation Date:
+Modification Date:
+Version:
+File Name:
+Description:
+*/

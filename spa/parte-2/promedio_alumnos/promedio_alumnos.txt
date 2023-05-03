@@ -5,3 +5,18 @@ y se requiere imprimir el resultado como un número entero. Si el promedio tiene
 parte decimal, esta debe ser eliminada.
 
 ********************************************************************************
+¿Qué debe recibir mi programa?
+
+¿Qué debe procesar, operar, realizar mi progrma?¿Qué estrategia debe seguir?
+
+¿Qué debe imprimir?
+
+/*
+Nombre del Programa: 
+Autor:
+Fecha de creación: 
+Fecha de modificación: 
+Versión:
+Nombre del archivo:
+Descripción:
+*/

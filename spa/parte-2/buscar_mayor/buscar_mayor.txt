@@ -4,3 +4,18 @@ Desarrollar un programa que lea un número N y determine el número máximo entr
 los siguientes N valores ingresados.
 
 ********************************************************************************
+¿Qué debe recibir mi programa?
+
+¿Qué debe procesar, operar, realizar mi progrma?¿Qué estrategia debe seguir?
+
+¿Qué debe imprimir?
+
+/*
+Nombre del Programa: 
+Autor:
+Fecha de creación: 
+Fecha de modificación: 
+Versión:
+Nombre del archivo:
+Descripción:
+*/

@@ -9,3 +9,18 @@ número de estudiantes presentes que tuvieron el examen con ellos en el momento
 del cálculo. Los resultados deben imprimirse redondeados al entero más cercano.
 
 ********************************************************************************
+¿Qué debe recibir mi programa?
+
+¿Qué debe procesar, operar, realizar mi progrma?¿Qué estrategia debe seguir?
+
+¿Qué debe imprimir?
+
+/*
+Nombre del Programa: 
+Autor:
+Fecha de creación: 
+Fecha de modificación: 
+Versión:
+Nombre del archivo:
+Descripción:
+*/
