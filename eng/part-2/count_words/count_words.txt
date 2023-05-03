@@ -9,3 +9,19 @@ and display the percentage they represent of the total number of words.
 ● Determine the length of the longest word.
 (Do not use primitives functions)
 ********************************************************************************
+What should my program receive as input?
+
+What processing, operations, or tasks should my program perform? What strategy
+should it follow?
+
+What output should my program produce?
+
+/*
+Program Name:
+Author:
+Creation Date:
+Modification Date:
+Version:
+File Name:
+Description:
+*/

@@ -7,3 +7,19 @@ city 2 has 1500 boys under 10 years old, and city 3 has 1530 boys
 under 10 years old."
 
 ********************************************************************************
+What should my program receive as input?
+
+What processing, operations, or tasks should my program perform? What strategy
+should it follow?
+
+What output should my program produce?
+
+/*
+Program Name:
+Author:
+Creation Date:
+Modification Date:
+Version:
+File Name:
+Description:
+*/
