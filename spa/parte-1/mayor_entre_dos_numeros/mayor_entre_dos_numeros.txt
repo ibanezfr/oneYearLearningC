@@ -6,3 +6,18 @@ posible crear una versión con menos condiciones? Además, ¿ser podría codific
 una versión que requiera menos declaraciones de estructuras condicionales SI?
 
 ********************************************************************************
+¿Qué debe recibir mi programa?
+
+¿Qué debe procesar, operar, realizar mi progrma?¿Qué estrategia debe seguir?
+
+¿Qué debe imprimir?
+
+/*
+Nombre del Programa: 
+Autor:
+Fecha de creación: 
+Fecha de modificación: 
+Versión:
+Nombre del archivo:
+Descripción:
+*/
