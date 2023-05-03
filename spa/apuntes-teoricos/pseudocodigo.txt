@@ -1,0 +1,111 @@
+********************************************************************************
+
+**** Partes de un programa: ***
+    Programa <Nombre del programa>
+        //Declaraciones
+        Constantes
+
+        Tipos Estructurados
+
+        Funciones
+
+        Procedimientos
+
+        Variables
+        
+        //Cuerpo Principal
+            Hacer
+
+            //Instrucciones
+
+            Fin Hacer
+
+    Fin del Programa
+
+********************************************************************************
+
+*** El uso de las Constantes, las Variables y los Operadores en un programa 
+escrito en Pseudocódigo. ***
+
+    1._Las CONSTANTES: son valores que no cambian durante la ejecución del 
+Programa.
+
+    Palabra Reservada  ----->  Constantes
+    Formato         -------->  <Nombre de la Constante> = Valor
+
+    2._ Los TIPOS DE DATOS: Son tipos de datos ya definidos en el Pseudocódigo.
+
+    NUMÉRICOS
+        Entero      <Cantidad de Cifras>
+            (Ej: 2 ; 3 ; 215)
+        Real        <Cantidad de Cifras> , <Cantidad de Cifras que son mantisa>
+            (Ej: 2 ; 3,1416 ; 125,3)
+    CARÁCTER
+        Caracteres  <Cantidad de Caracteres>
+            (Ej: 'C' ; 'Hola...!' ; '125')
+    LÓGICOS
+        Booleano    
+            (Ej: Verdadero o Falso)
+
+    3._ Las VARIABLES: son valores que pueden cambiar durante la ejecución del 
+programa.
+    Palabra reservada ------> Variables
+    Formato        ---------> <Nombre de la Variable> : <Tipo de Dato> <Tamaño>
+            (Ej: 
+                Variable        
+                    C : Entero 2
+                    R,X : Real 5,2  (5 dígitos, de los cuales 3 son Enteros y 2 
+                                son decimales, ej: 135,23.)
+            )
+    4._ La SENTENCIA DE ASIGNACIÓN, nos permite asignarle un Valor a una 
+    Variable definida durante la ejecución del Programa.
+                    La Sintaxis
+    Formato     <Nombre de la Variable> := <Valor>    
+        (Ej:
+            C := 2
+            R := C
+        )
+    
+    5._ EXPRESIONES OPERACIONES ARITMÉTICAS 
+
+    +   Suma        (Suma := A + 3)    
+    -   Resta       (Resta := A - P)
+    /   División    (Suma := A / 2)
+    **  Potencia    (Suma := A ** 5)
+    *   Producto    (Suma := A * E)
+
+    6._ OPERACIONES CON CARACTERES
+
+    +   La Concatenación  (Ej: 
+                            titulo := 'el día'
+                            fin := ' está nublado'
+                            resultado := titulo + fin
+                            // ---> 'el día está nublado'
+                            )
+                            
+    LONG (<Nombre de la Variable>)
+        Sirve para obtener la longitud de una cadena de caracteres.
+        (
+            X := LONG(titulo)  //---> En este caso se le asigna el valor de 
+            6 a X
+        )
+
+    SUBCAD (<Nombre de la Variable>, Posición Desde, Cantidad de Posiciones)
+        Devuelve una subcadena a partir de un carácter Incondicional
+        (
+            B:= 'hoy es martes'
+            C:= subcad(B,5,2) //-->( a C se le asigna 'es')
+            D:= subcad(B,8,3) //-->( a D se le asigna 'mar')
+            subcad(b,8,4):='juev' //--> ( b cambia su valor por 'hoy es jueves')
+        )
+
+
+********************************************************************************
+
+*** Estructuras de Control de Decisión: Simple, Anidada y Múltiples ***
+
+
+
+********************************************************************************
+
+*** Estructuras de Control de Repetición: Incondicional (Fija) y Condicional ***
