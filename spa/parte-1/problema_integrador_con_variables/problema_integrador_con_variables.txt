@@ -29,7 +29,8 @@ ESTRATEGIA Y SITUACIÓN:
     Una variable es el recurso que tenemos para procesar un dato en memoria.
 
     *Hay 3 tipos de botellas.
-
+    *El importe de una caja de calcula: 6 * precio de un tipo de botella.
+    
 
 ¿Cuál es el proceso de transformación que debe encarar mi programa?
 
