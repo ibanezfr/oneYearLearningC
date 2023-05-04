@@ -1,0 +1,36 @@
+*******************************************************************************
+PROBLEMA INTEGRADOR CON VARIABLES
+
+    Una fábrica vende cajas de botellas. Existen tres tipos de botellas de las 
+que posee un stock al inicio de una semana de cada uno de ellas y una cantidad 
+de cajas para embalar de a seis botellas por caja. Se informa al inicio el 
+precio de venta de cada tipo de botella. Las botellas se venden por cajas 
+completas de un único tipo.
+
+    Se activará al final de cada dia un alerta si existen menos de 50 cajas. 
+Durante cada día se establece que se recibe como mínimo un pedido de compra de
+un único tipo de botellas solicitado por vez, acompañado con la cantidad de 
+cajas solicitdas. De ser viable se realizará la venta informando que fue 
+exitosa o en caso contrario se rechazará el pedido informando la causa. La 
+empresa suspenderá la recepción de pedidos de compra si no tiene cajas 
+disponibles.
+
+    La empresa debe obtener un informe semanal con: 
+        1._Cantidad de días trabajados
+        2._ mínima cnatidad de ventas de cajas diarias
+        3._ promedio de importe por ventas por caja y cantidad de pedidos 
+            rechazados por falta de botellas.
+
+*******************************************************************************
+ESTRATEGIA Y SITUACIÓN:
+
+¿Qué datos de entrada recibirá mi programa?
+    Toda variable que yo quiera utilizar debe estar justificada.(Marcos)
+    Una variable es el recurso que tenemos para procesar un dato en memoria.
+
+    *Hay 3 tipos de botellas.
+
+
+¿Cuál es el proceso de transformación que debe encarar mi programa?
+
+¿Qué datos salida?
