@@ -104,8 +104,24 @@ programa.
 
 *** Estructuras de Control de Decisión: Simple, Anidada y Múltiples ***
 
-
-
+    Un ejemplo de DECISIÓN SIMPLE ANIDADA:
+    ...
+    Leer: A, B
+    Si A > B Entonces
+            Imprimir: "A es mayor a B"
+    Sino
+        Si A < B Entonces
+            Imprimir: "B no es mayor a A"
+        Sino 
+            Si A = B Entonces
+                Imprimir: "A es igual a B"
+            Sino
+                Imprimir: "A es distinto a B" 
+            Fin Si
+        Fin Si
+    Fin Si
+    ...
+    
 ********************************************************************************
 
 *** Estructuras de Control de Repetición: Incondicional (Fija) y Condicional ***
