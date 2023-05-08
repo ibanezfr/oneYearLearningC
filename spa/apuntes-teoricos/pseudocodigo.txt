@@ -104,7 +104,7 @@ programa.
 
 *** Estructuras de Control de Decisión: Simple, Anidada y Múltiples ***
 
-    Un ejemplo de DECISIÓN SIMPLE ANIDADA:
+    1._ Un ejemplo de DECISIÓN SIMPLE ANIDADA:
     ...
     Leer: A, B
     Si A > B Entonces
@@ -121,7 +121,111 @@ programa.
         Fin Si
     Fin Si
     ...
-    
+
+    2._ Un esquema de programa de DECISIÓN MÚLTIPLE
+
+        Caso <Variable>
+
+            <Valor 1> : <Instrucción 1>
+
+            <Valor 2> : <Instrucción 2>
+                        <Instrucción 3>
+            
+            <Valor 3> : <Instrucción 4>
+                        ...
+                        ...
+            <Valor N> : <Instrucción N>
+
+            Otro Caso : 
+                        <Instrucción 1.1>
+                        <Instrucción 1.2>
+        Fin Caso
+
+    3._ Un ejemplo con un valor
+        Leer: OP //Se busca saber si el valor está dentro de un rango
+        Caso: OP
+            (OP >= -12 y OP < 0) : Imprimir: 'Intervalo [-12,0)'
+            (OP > 0 y OP <= 125) : Imprimir: 'Intervalo (0,125]'
+            (OP >= 124 y OP <= 250) : Imprimir: 'Intervalo [124, 250]'
+        Otro Caso:
+            Imprimir: 'No está en ninguno de los intervalos deseados.'
+        Fin Caso
+
+DECISIÓN SIMPLE
+
+    Si <Condición> Entonces <Instrucción>    
+
+    Si <Condición> Entonces
+                        <Insctrucción 1>
+                        <Insctrucción 2>
+                        ...
+                        <Insctrucción N>
+    Fin Si
+
+
+********** ELEMENTOS PARA ARMAR LAS CONDICIONES **********
+
+Pueden ser  |Resultados de  |Negación de los resultados|
+variables o |de acuerdo a   |obtenidos de las          |
+resultados  |los valores que|operaciones               |
+de una      |tomen A y B    |                          |
+condición   |               |                          |
++-----+-----+-------+-------+------------+-------------+
+|  A  |  B  | A y B | A o B | No (A y B) |  No (A o B) |
++-----+-----+-------+-------+------------+-------------+
+|  V  |  V  |   V   |   V   |     F      |      F      |
++-----+-----+-------+-------+------------+-------------+
+|  V  |  F  |   F   |   V   |     V      |      F      |
++-----+-----+-------+-------+------------+-------------+
+|  F  |  V  |   F   |   V   |     V      |      F      |
++-----+-----+-------+-------+------------+-------------+
+|  F  |  F  |   F   |   F   |     V      |      V      |
++-----+-----+-------+-------+------------+-------------+
+
+
+******* Los símbolos de comparación ******* 
+Valores ejemplo: A:= 15
+                 B:= 20
+
+    > (mayor)            A > B Falso
+    < (menor)            A < B Verdadero
+    > = (mayor igual)    A > = B Falso
+    < = (menor o igual)  A < = B Verdadero
+    < > (distinto)       A < > B Verdadero
+    = (igual)            A = B  Falso
+
 ********************************************************************************
 
 *** Estructuras de Control de Repetición: Incondicional (Fija) y Condicional ***
+
+    La repetición fija, es un tipo de estrucutura que nos permite repetir una 
+cantidad fija de veces un conjunto de instrucciones.
+    SINTAXIS: 
+
+    REPETIR PARA <Variable de Control> := <Desde> , <Hasta> , <Paso>
+        Instrucción 1
+        Instrucción 2
+        ...
+        ...
+        Instrucción N
+
+    FIN REPETIR PARA
+                                <Variable de Control>, es una variable de tipo 
+entero que cuenta las iteraciones. <Desde>, es el valor inicial de la variable 
+de control. <Hasta>, es el valor final de la variable de control. <Paso>, es el 
+valor de incremento de la variable de control.                    
+
+
+
+    La repetición condicional, es un tipo de estructura que no se sabe cuantas
+veces se va a iterar un conjunto de instrucciones ya que esta sujeta al estado 
+de una condición.
+    SINTAXIS:
+
+    REPETIR MIENTRAS <Condición compuesta>
+        Instrucción 1
+        Instrucción 2
+        ...
+        ...
+        Instrucción N    
+    FIN REPETIR MIENTRAS
