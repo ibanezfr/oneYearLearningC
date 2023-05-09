@@ -1,0 +1,66 @@
+********************************************************************************
+Determinar en una fábrica donde se tienen 4 turnos y fabrican 3 productos,
+lo siguiente:
+    a._ Por cada turno el total de producción de cada productos
+
+    b._ Una vez finalizada la jornada determinar:
+        - Total de producción
+        - Porcentaje de producción de cada producto sobre el total
+********************************************************************************
+
+Programa fabrica-turnos
+
+    Variables 
+        prod1, prod2, prod3, totprod1, totprod2, totprod3 : Entero(5)
+        i , producto: Entero(1)
+        sigueTurno: Entero(1)
+        Total: Entero(10)
+
+        totprod1:= 0
+        totprod2:= 0
+        totprod3:= 0
+
+    Hacer
+        Repetir Para i:= 1 , 4 , 1
+
+        prod1:= 0
+        prod2:= 0
+        prod3:= 0
+        sigueTurno: 1
+
+            Repetir Mientras(sigueTurno = 1)
+                Imprimir: "Ingrese el tipo de producto 1/2/3"
+                Leer: producto
+
+                Caso producto
+                    1: Prod1:= Prod1 + 1
+                    2: Prod2:= Prod2 + 1
+                    3: Prod3:= Prod3 + 1
+                Fin Caso
+
+                Imprimir: "¿Hay más Productos: 1:Sí , 0:No ?"
+                Leer: sigueTurno
+
+            Fin Repetir Mientras
+
+            Imprimir: "Total de productos Turno: ",i
+            Imprimir: "Producto 1: ",prod1
+            Imprimir: "Producto 2: ",prod2
+            Imprimir: "Producto 3: ",prod3
+
+            totprod1:= totprod1 + prod1
+            totprod1:= totprod2 + prod2
+            totprod1:= totprod3 + Prod3
+
+        Fin Repetir
+
+    Total:= totprod1 + totprod2 + totprod3
+    Imprimir:= "La producción total es de: ", Total
+
+    Imprimir:= "El porcentaje del Producto 1 es de %", totprod1*100/Total
+    Imprimir:= "El porcentaje del Producto 2 es de %", totprod2*100/Total
+    Imprimir:= "El porcentaje del Producto 3 es de %", totprod3*100/Total
+
+    Fin Hacer
+
+Fin Programa

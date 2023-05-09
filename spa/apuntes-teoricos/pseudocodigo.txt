@@ -229,3 +229,25 @@ de una condición.
         ...
         Instrucción N    
     FIN REPETIR MIENTRAS
+
+********************************************************************************
+
+8 de Mayo 2023 --- Notas 3er clase Pseudocódigo
+
+El programador debe indicarle bien los pasos al usuario.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
