@@ -1,11 +1,12 @@
 ********************************************************************************
-Determinar en una fábrica donde se tienen 4 turnos y fabrican 3 productos,
-lo siguiente:
-    a._ Por cada turno el total de producción de cada productos
+En una fábrica se tienen 4 turnos y se fabrican 3 productos,
+determinar:
+    a._ Por cada turno el total de producción de cada producto
 
     b._ Una vez finalizada la jornada determinar:
         - Total de producción
         - Porcentaje de producción de cada producto sobre el total
+
 ********************************************************************************
 
 Programa fabrica-turnos
@@ -26,7 +27,7 @@ Programa fabrica-turnos
         prod1:= 0
         prod2:= 0
         prod3:= 0
-        sigueTurno: 1
+        sigueTurno:= 1
 
             Repetir Mientras(sigueTurno = 1)
                 Imprimir: "Ingrese el tipo de producto 1/2/3"
@@ -49,8 +50,8 @@ Programa fabrica-turnos
             Imprimir: "Producto 3: ",prod3
 
             totprod1:= totprod1 + prod1
-            totprod1:= totprod2 + prod2
-            totprod1:= totprod3 + Prod3
+            totprod2:= totprod2 + prod2
+            totprod3:= totprod3 + Prod3
 
         Fin Repetir
 
