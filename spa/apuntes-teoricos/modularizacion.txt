@@ -1,5 +1,5 @@
 ********************************************************************************
-10/05/2023   Prof. Marcos
+10/05/2023   
 
                        **** MODULARACIÓN ****
     La progmación modular es la division de la solución en módulos.
@@ -37,3 +37,23 @@ En teoría siempre una función va a recibir parametros por función o por copia
 Los de copia no necesitan ser modificados en si mismos.
 Varias de las cosas que está mostrando, solo se aplican al pseudocodigo, porque 
 los lenguajes por cuestiones de codificacione no lo aplican.
+
+Cada vez que se inicia un conjunto de código o modulo, sigue estando en memoria, 
+pero en el momento que se llama a otro modulo, pasa a estar en espera, sigue 
+estando en memoria, pero espera, es decir,no ejecutandose.
+
+En memoria tenemos código y los datos.
+
+De manera estricta es conveniente que coincidan las cantidades de variables
+formales y las reales.
+Cuando las 2 rutinas no tienen la misma cabeza, entra en juego armar una buena 
+documentación para evitar ambigüedades y poder mantener el código.
+
+Regla de correspondencia entre parámetros....
+
+
+Tipos de parámetros:
+    De entrada
+    De salida
+    De entrada / salida
+Todo esto entra en juego en el momento de realizar la llamada.
