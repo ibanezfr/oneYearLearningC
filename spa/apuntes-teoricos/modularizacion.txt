@@ -1,0 +1,39 @@
+********************************************************************************
+10/05/2023   Prof. Marcos
+
+                       **** MODULARACIÓN ****
+    La progmación modular es la division de la solución en módulos.
+Es decir, ante un problema complejo, es convienente poder divirlo, en módulos de
+programación. La estrategia es descomponer la solución en subsolución. Tener
+sub-programas o sub-algoritmos, tienen como tarea un objetivo más específico
+que deberán resolver.
+    ¿Hasta que nivel iremos dividiendo? Hasta un nivel donde no sea necesario seguir 
+dividiendolo, e irá variando de alumno en alumno.
+    Una metodología de diseño es identificar las subtareas para armar los 
+distintos módulos. Antes de comenzar a trabajar, intentar identificar las 
+subtareas.
+    Esos módulos luego deben ser nuevamente descompuestos, constituyendo así
+la programación por refinamiento.
+
+El problema se resuelve con el programa.
+Los módulos se resuelven con los subprogramas.
+
+Los subprogramas está compuestos por procedimientos y funciones.
+Cuando la función no devuelve un resultado, es un procedimiento.
+Cuando si devuleve un resultado es una función. Pero es un abuso del lenguaje
+que usamos en el C.
+
+El conjunto de datos que se envía como comunicación entre las unidades de 
+programa recibe el nombre de PARÁMETROS.
+
+Las variables que se declaren en módulo principal las declaramos al principio.
+Pero aquellas variables que solo tienen sentido en contexto de ejecución del 
+procedimiento deben ser declaradas dentro del procedimiento.
+
+No hay que pensar en las variables, hay que pensar en las acciones ,
+y las acciones me definen las variables que voy a necesitar.
+
+En teoría siempre una función va a recibir parametros por función o por copia.
+Los de copia no necesitan ser modificados en si mismos.
+Varias de las cosas que está mostrando, solo se aplican al pseudocodigo, porque 
+los lenguajes por cuestiones de codificacione no lo aplican.
