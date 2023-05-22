@@ -1,0 +1,36 @@
+Planteo a resolver con procedimientos, utilizando variables.
+
+Desarrollar un programa que ingresa la nota de cada uno de los 5 alumnos de un curso
+evaluados en 3 materias. El valor de nota minima de aprobación que debe
+ingresarse (>= 6). Se supone que por cada nota desaprobada un alumno debe 
+abonar un derecho de examen, existiendo dos importes a informar, si su nota
+es de aplazo (<= fijo) o desaprobada (>3 y < nota minima). Ambos importes se informan
+al inicio. Controlar contenido de nota valido.
+
+Debe informarse:
+
+1- Informar el promedio de notas en una materia previamente seleccionada
+entre las 3 materias evaluadas.
+2- Informar el porcentaje de alumnos desaprobados en la materia seleccionada
+3- Informar el importe recaudado por derechos de examenes en general.
+
+Mi primer pensamiento debería contemplar:
+
+ENTRADA ------>  PROGRAMA ------>  SALIDA
+Debo considerar que variables debo retonar al final. Para comenzar a visualizar que variables
+debo definir al principio.
+1- Promedio de una materia ---> Necesito un acumulador.
+2- Porcentaje ----> (Cantidad de desaprobados en la materia X / Cantidad(que es fija => 5))
+3- Recaudación ---->  (importe por aplazo e importe por desaprobado)
+
+1._ Ingreso de datos iniciales.
+
+Esta es una propuesta de solución:
+ORDEN DE EJECUCIÓN DE TAREAS EN LOS MODULOS:
+TAREAS O ACCIONES CON DATOS:
+1._ Inicializaciones generales (acumulador de recaudado) (MP)
+2._ Ingreso de importes de derecho de examen, con y sin aplazo (MP)
+3._ Ingreso de nota mínima de aprobación
+4._ Ingresar el código de materia seleccionada (MP)
+5._ Ingreso de cada nota de cada alumno, por cada una de las tres materias (MP)
+6._ Calcular el promedio de notas de la materia 

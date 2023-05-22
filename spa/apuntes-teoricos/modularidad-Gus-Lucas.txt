@@ -1,0 +1,9 @@
+
+15 de mayor de 2023
+
+Variables Globales y Locales
+
+Procedimiento    Subprograma:
+        *Sin devolución de resultado inicializar variables
+
+    La parametrización
