@@ -1,0 +1,25 @@
+22 de mayo de 2023
+
+Variables - tipos de datos - operaciones
+Estructuras de decisión / control (si-caso)
+Estructuras de repetición (repetir para / repetir mientras)
+Modularidad (funciones - procedimientos)
+
+Pseudocódigo y C
+
+**********************************************************************
+El juego de dados conocido como "craps" (tiro perdedor) es muy
+popular, realice un programa que simule dicho juego, a continuación
+se muestran las reglas para los jugadores.
+
+    * Un jugador tira dos dados. Cada dado tiene seis caras. Las 
+caras continen 1, 2, 3, 4, 5 y 6 puntos.
+    * Una vez que los dados se hayan detinido, se calcula la suma
+de los puntos en las dos caras superiores.
+    * Si a la primera tirada la suma es 2, 3 o 12 (conocido como
+"craps"), el jugador pierde (es decir la casa 'gana').
+    * Si a la primera tirada la suma es 4, 5, 6, 8, 9 ó 10, entonces
+dicha suma se convierte en el 'punto' o en la 'tirada'.
+    * Para ganar, el jugador deberá continuar tirando los dados hasta 
+que haga su 'tirada'.
+    * El jugador perderá si antes de hacer su tirada sale una tirada de 7.
