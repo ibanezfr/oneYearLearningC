@@ -17,20 +17,20 @@ Programa fabrica-turnos
         sigueTurno: Entero(1)
         Total: Entero(10)
 
-        totprod1:= 0
-        totprod2:= 0
-        totprod3:= 0
+        totprod1:= 0  ---> 120
+        totprod2:= 0  -->  120 
+        totprod3:= 0  --> 120
 
-    Hacer
-        Repetir Para i:= 1 , 4 , 1
+    Hacer                                   
+        Repetir Para i:= 1 , 4 , 1   (Fin cuarta vuelta)
 
-        prod1:= 0
-        prod2:= 0
-        prod3:= 0
-        sigueTurno:= 1
+        prod1:= 0  --> 0
+        prod2:= 0  --> 0
+        prod3:= 0  --> 0
+        sigueTurno:= 1  --> 1
 
             Repetir Mientras(sigueTurno = 1)
-                Imprimir: "Ingrese el tipo de producto 1/2/3"
+                Imprimir: "Ingrese el tipo de producto 1/2/3"  
                 Leer: producto
 
                 Caso producto
@@ -65,3 +65,10 @@ Programa fabrica-turnos
     Fin Hacer
 
 Fin Programa
+
+
+360  -----> 100%
+120 -----> (120 * 100%) / 360 = 33,33 %   
+
+360 -----> 100%
+30  -----> (30 * 100%) / 360 = 8,33 %

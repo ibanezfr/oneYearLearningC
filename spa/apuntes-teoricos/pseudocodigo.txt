@@ -251,3 +251,11 @@ El programador debe indicarle bien los pasos al usuario.
 
 
 
+const objeto = {
+    "mes_1": "enero",
+    "mes_2": "febrero",
+    "mes_3": "marzo",
+    "mes_4": "abril"    
+}
+
+objeto.mes_1  ----> "enero"
