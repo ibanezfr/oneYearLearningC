@@ -1,0 +1,291 @@
+********************************************************************************
+
+Subprograma
+Procedimiento o Función
+Parámetros , argumentos
+Invocar un Subprograma, La idea del llamador (Invocación, llamado)
+Variables globales y locales
+
+Parámetros por valor: 
+        Es una variable local al procedimiento, su cambio no se 
+nota fuera del Subprograma, se les asigna un valor al momento de la invocación,
+pueden estar dados como constantes o variables.
+
+Parámetros por referencia:
+        Solo puede exister en relación con una variable, cualquier cambio que 
+sufra, afecta el valor del argumento variable. Sirve para hacer referencia al
+valor de una variable con un nombre significativo dentro del Subprograma. Pueden
+ser de entrada o de salida para el Subprograma.
+
+¿Qué sería un módulo?
+         Sería un conjunto de Subprograma relacionados entre si 
+de alguna forma.
+
+Programa Principal
+int acumulador;
+int resultado;
+
+acumulador = 0;
+
+int producto(A int, B int, acumulador){
+    acumulador++;
+    int respuesta;
+    respuestaL:= A * B;
+    return respuesta;
+};
+
+
+producto(2,5);
+
+Fin Programa
+********************************************************************************
+
+    En una competencia de autos, en la que participan 20 corredores como máximo 
+(cada uno identificado por un número de 2 dígitos), se reciben los resultados de
+3 pruebas clasificatorias.
+    Los datos recibidos de cada prueba, para cada corredor son:
+         * tiempo utilizado para terminar la prueba (expresado en horas, minutos y 
+segundos),
+         * el número de identificación 
+         * la cantidad de giros completos 
+realizados.
+
+    Si un corredor que inició la prueba no la finaliza por algún problema,
+los valores del tiempo están en cero. Se informa antes de iniciar cada prueba, la
+cantidad total de corredores que interviene en la misma y los datos se reciben
+en el orden en que han clasificado.
+
+    Se debe informar al finalizar cada prueba: 
+        * el mejor tiempo expresado en segundos,
+        * identificación del corredor, 
+        * la diferencia de tiempo en segundos sobre el segundo clasificado
+(si no llegó a terminar la prueba un segundo competidor es nula)
+        * y el porcentaje de corredores (con respecto a los que la iniciaron)
+que finalizaron la prueba a una distancia no mayor a dos giros de los recorridos
+por el ganador.
+
+     Luego de las pruebas
+clasificatorias se lleva a cabo la etapa final, de características similares a
+un prueba clasificatoria, recibiendo los mismos datos de entrada e igual orden
+que en una prueba clasificatoria. Se debe realizar un ajuste de tiempo utilizado
+por los corredores que accedieron al podio, restándole a cada uno, las 
+diferencias obtenidas sobre los segundos clasificados en cada prueba en la que
+terminaron primero. De esa manera la información requerida luego del ajuste es
+cantidad de corredores que terminaron la etapa y la identificación,cantidad de
+giros realizados y el tiempo utilizado (expresado en horas, minutos y segundos) 
+del ganador final de la carrera. Se descarta toda igualdad de tiempos registrado
+en los primeros tres lugares.
+
+Análisis del Problema:
+
+¿Qué entradas se requieren (Tipo y Cantidad)?
+    a._Por cada una de las 3 pruebas
+        a.1_Cantidad de corredores que inician la prueba.
+        a.2_Datos obtenidos por cada uno de los corredores, informados por orden de llegada:
+            a.2.1_Número de corredor(valor entero de 2 dígitos)
+            a.2.2_Tiempo utilizado para terminar la prueba:
+                a.2.2.1_Cantidad de horas(valor entero de 2 dígitos)
+                a.2.2.2_Cantidad de minutos(valor entero de 2 dígitos)
+                a.2.2.3_Cantidad de segundos(valor entero de 2 dígitos)
+        a.2.3_Cantidad de giros completos (valor entero de 2 dígitos)
+
+    b_ De la etapa final:
+        b.1_ Cantidad de corredores que inician la etapa final
+        b.2_ Datos obtenidos por cada uno de los corredores, informados en orden de llegada:
+            b.2.1_ Número de corredor (valor entero de 2 dígitos)
+            b.2.2_ Tiempo utilizado para terminar la prueba:
+                b.2.2.1_ Cantidad de horas (valor entero de 2 dígitos)
+                b.2.2.2_ Cantidad de minutos (valor entero de 2 dígitos)
+                b.2.2.3_ Cantidad de segundos (valor entero de 2 dígitos)
+            b.2.3_ Cantidad de giros completos realizados (valor entero de 2 dígitos)
+        b.3_ Número de identificación de cada corredor ganador en las pruebas y los segundos de
+diferencia sobre el segundo clasificado.
+
+        (
+         En las pruebas voy a tener 3 ganadores (3 números de indentificación)
+         En la prueba final 1
+        
+        )
+
+¿Cuál es la Salidad deseada? (Tipo y Cantidad)
+  a_ En cada una de las 3 pruebas:
+    a.1_ Número de identificación del corredor ganador.
+    a.2_ Tiempo utilizado por el ganador expresado segundos.
+    a.3_ Diferencia de segundos sobre el segundo clasificado.
+    a.4_ Porcentaje de corredores que finalizaron la prueba con un margen máximo de dos giros.
+  b_ En la prueba final:
+    b.1_ Número de identificación del corredor ganador final.
+    b.2_ Tiempo utilizado por el ganador con el ajuste final, expresado en horas, minutos y
+    segundos.
+    b.3_ Cantidad de giros realizados por el ganador final.
+    b.4_ Cantidad de corredores que terminaron la etapa final
+
+¿Qué método produce la salida deseada?
+    Tendremos un Subprograma que procese una prueba clasificatoria, será 
+invocada 3 veces.
+    Otro Subprograma que procese la prueba final, será invocado 1 vez.
+
+********************************************************************************
+
+PROGRAMA: CARRERA DE AUTOS
+  VARIABLES:
+  NG1, NG2, NG3 : ENTERO 2
+  DIFSEG1, DIFSEG2, DIFSEG3: ENTERO 5
+
+  PROCEDIMIENTO: PruebaCla(REF:NG:ENTERO 2 ; REF:Tseg:ENTERO 5)
+    VARIABLES:
+    THcor, TMcor, TScor //Tiemop utilizado por el corredor
+    GIROS, // cantidad de giros
+    CANTcor, // cantidad de corredores
+    NROcor, // nro, indentificación del corredor
+    INDcor, // índice del Rep. PARA por corredor
+    MINGIROS, // número mínimo de giros para contar
+    SELEC   // contador para el porcentaje
+    :ENTERO 2
+    TPRIMERO, Tiempo en segundos del ganador
+    TSEGUNDO, Tiempo en segundos del segundo en llegar
+    : ENTERO 5
+    PORCGIROS: REAL 5,2
+        
+    HACER
+      SELEC := 0
+      LEER: CANTcor
+
+      REPETIR PARA: INDcor:= 1, CANTcor, INDcor++
+      LEER: NROcor, GIROS, THcor, TMcor, TScor
+      SI: (INDcor = 1) ENTONCES // es el primer corredor
+        TPRIMERO := TiempoEnSeg(THcor, TMcor, TScor)
+        NG := NROcor
+        MINGIROS:= GIROS - 2
+      SINO
+        SI: (INDcor = 2) ENTONCES // es el segundo corredor
+          SI: (THcor + TMcor + TScor > 0) ENTONCES
+            TSEGUNDO := TiempoEnSeg(THcor, TMcor, TScor)
+            Tseg := TSEGUNDO - TPRIMERO // La diferencia entre el pirmer segundo corredor
+          SINO
+            Tseg := 0 // si el segundo corredor no termina, la diferencia es nula        
+          FIN SI
+        FIN SI
+      FIN SI
+      SI: (THcor + TMcor + TScor > 0) Y (GIROS >= MINGIROS) ENTONCES
+        SELEC := SELEC + 1 // contador para el porcentaje
+      FIN SI
+      FIN REPETIR PARA
+      PORCGIROS := SELEC * 100 / CANTcor
+      IMPRIMIR: "Ganó el corredor: ", NG,
+        "utilizando un tiempo de: ", TPRIMERO,
+        "segundos y con una diferencia sobre el segundo",
+        "clasificado de", TSEG, "segundos"
+      IMPRIMIR: "El porcentaje de corredores que finalizaron la prueba
+      dentro de los dos giros: ", PORCGIROS
+    FIN HACER
+  FIN PROCEDIMIENTO
+
+
+  PROCEDIMIENTO: EtapaFinal(VG1: ENTERO 2; DIF1; ENTERO 5; VG2: ENTERO 2; 
+  DIF2: ENTERO 5; VG3: ENTERO 2; DIF3: ENTERO 5)
+  // Controla lo que ocurre en la etapa final
+  // Los parámetros representan la información de entrada producida por las 
+  // pruebas clasificatorias: VGn indentifica al ganador y DIFn la diferencia 
+  // con el segundo en la prueba n
+  VARIABLES:
+  THcor, TMcor, TScor, GIROS, CANTcor, NROcor, INDcor // Estas variables son 
+  // similares al procedimiento PruebaCla
+  SELEC // Será un contador que corredores que finalizan la etapa final
+  // las restantes variables describen información de los 3 primeros en la etapa
+  // final y del que resulta ganador después de los ajustes
+  COR1, COR2, COR3, GANA, // la indentificación del corredor
+  GIROSGANA, GIROS1, GIROS2, GIROS3 // la cantidad de giros
+  : ENTERO 2
+  SEG1, SEG2, SEG3, SEGGANA: ENTERO 5 // el tiempo en segundos
+  HACER
+    LEER: CANTcor
+    SELEC := 0
+    REPETIR PARA: INDcor = 1, CANTcor, INDcor++
+    LEER: NROcor, GIROS, THcor, TMcor, TScor
+    SI: (INDcor <= 3) ENTONCES // se guardan los datos de los 3 primeros
+    CASO // ajustando los tiempos según las pruebas clasificatorias
+      (INDcor = 1): //primer lugar en la etapa final
+        COR1:= NROcor
+        GIROS1:= GIROS
+        SEG1:= TiempoEnSeg(THcor, TMcor, TScor)
+        SEG1:= AJUSTE(VG1, DIF1,VG2, DIF2, VG3, DIF3, COR1, SEG1)
+      (INDcor = 2):
+        COR2:= NROcor
+        GIROS2:= GIROS
+        SEG2:= TiempoEnSeg(THcor, TMcor, TScor)
+        SEG2:= AJUSTE(VG1, DIF1, DIF2,VG3, DIF3, COR2, SEG2)
+      (INDcor = 3):
+        COR3:= NROcor
+        GIROS3:= GIROS
+        SEG3:= TiempoEnSeg(THcor,TMcor, TScor)
+        SEG2:= AJUSTE(VG1, DIF1, DIF2,VG3, DIF3, COR3, SEG3)
+    FIN CASO
+  FIN SI
+  SI: (THcor + TMcor + TScr > 0) ENTONCES
+  SELECT:= SELEC + 1 //se cuentan cuantos corredores terminaron
+  FIN SI
+  FIN REPETIR PARA
+  GANA:= COR1
+  SEGGANA:= GIROS1
+  SI: (SEG2 < SEGGANA) ENTONCES //reordena luego del ajuste
+    SI: (SEG2 < SEG3) ENTONCES
+      GANA:= COR2
+      GIROSGANA:= GIROS2
+      SEGGANA:= SEG2
+    SINO
+      GANA:= COR3
+      GIROSGANA:= GIROS3
+      SEGGANA:= SEG3
+    FIN SI
+  FIN SI
+  TiempoEnHMS(SEGGANA, THcor, TMcor,TScor)//tiempo ganador en horas, minutos y segundos
+  IMPRIMIR: "El ganador final fue el corredor: ", GANA, " en", THcor, " horas",
+  TMcor, " minutos", TScor, " segundos", " y ", GIROSGANA, " GIROS"
+  IMPRIMIR: "Terminaron la etapa final", SELEC, " corredores."
+  FIN HACER
+  FIN PROCEDIMIENTO
+
+
+    FUNCION: TiempoEnSeg(VH: ENTERO 2; VM: ENTERO 2; VS: ENTERO 2): ENTERO 5
+      HACER // Convierte el tiempo de horas, minutos y segundos en segundos
+        TiempoEnSeg := VH * 3600 + VM * 60 + VS
+      FIN HACER
+    FIN FUNCION
+
+
+    PROCEDIMIENTO: TiempoEnHMS(DATO: ENTERO 5; REF:H:ENTERO 2; REF:M:ENTERO 2; 
+    REF:S:ENTERO 2)
+    HACER //convierte el tiempo en segundos en cantidad de horas, minutos y segundos
+      H:= ENT(DATO / 3600) //Función primitiva parte entera
+      DATO:= DATO - H * 3600
+      M:= ENT(DATO / 60)
+      S:= DATO - M * 60
+    FIN HACER
+    FIN PROCEDIMIENTO
+
+
+    FUNCION: AJUSTE(DVG1: ENTERO 2; DDIF1:ENTERO 5; DVG2:ENTERO2;
+    DDIF: ENTERO 5; DVG3:ENTERO 2; DDIF3: ENTERO 5; CORR: ENTERO 2; TsegCorr: ENTERO 5)
+      VARIABLES:
+        diferencia: ENTERO 5
+      HACER
+      CASO:(CORR)
+        DVG1: diferencia:= DDIF1
+        DVG2: diferencia:= DDIF2
+        DVG3: diferencia:= DDIF3
+      FIN CASO
+      Ajuste:= TsegCorr - diferencia
+      FIN HACER
+    FIN FUNCION
+
+
+    HACER 
+        PruebaCla(NG1, DIFSEG1)
+        PruebaCla(NG2, DIFSEG2)
+        PruebaCla(NG3, DIFSEG3)
+        EtapaFinal(NG1, DIFSEG1, NG2, DIFSEG1, NG3, DIFSEG3)
+    FIN HACER
+
+    
+FIN PROGRAMA
