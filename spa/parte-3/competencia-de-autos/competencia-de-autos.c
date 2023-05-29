@@ -11,7 +11,7 @@
 // Funciones
 int TiempoEnSeg(int VH, int VM, int VS);
 
-int AJUSTE(int DVG1, int DDIF1, int DVG2, int DDIF, int DVG3,
+int AJUSTE(int DVG1, int DDIF1, int DVG2, int DDIF2, int DVG3,
            int DDIF3, int CORR, int TsegCorr);
 
 // Procedimientos
@@ -29,10 +29,10 @@ int main()
     int DIFSEG1, DIFSEG2, DIFSEG3;
 
     // Hacer
-    PruebaCla(NG1, DIFSEG1);
-    PruebaCla(NG2, DIFSEG2);
-    PruebaCla(NG3, DIFSEG3);
-    EtapaFinal(NG1, DIFSEG1, NG2, DIFSEG1, NG3, DIFSEG3);
+    PruebaCla(&NG1, &DIFSEG1);
+    PruebaCla(&NG2, &DIFSEG2);
+    PruebaCla(&NG3, &DIFSEG3);
+    EtapaFinal(NG1, DIFSEG1, NG2, DIFSEG2, NG3, DIFSEG3);
     // Fin Hacer
 
     return 0;
@@ -55,10 +55,9 @@ void PruebaCla(int *REF_NG, int *REF_Tseg)
     printf("Ingrese la cantidad de corredores: ");
     scanf("%d", &CANTcor);
 
-    for (INDcor = 1; INDcor <= CANTcor; CANTcor++)
+    for (INDcor = 1; INDcor <= CANTcor; INDcor++)
     {
-        printf("Ingrese el número de corredor, cantidad de giros, ");
-        printf("horas, minutos y segundos: ");
+        printf("Ingrese el número de corredor, cantidad de giros, horas, minutos y segundos: ");
         scanf("%d %d %d %d %d", &NROcor, &GIROS, &THcor, &TMcor, &TScor);
 
         if (INDcor == 1) // Es el primer corredor
@@ -159,43 +158,38 @@ void EtapaFinal(int VG1, int DIF1, int VG2, int DIF2, int VG3, int DIF3)
     int horasGana, minutosGana, segundosGana;
     TiempoEnHMS(SEGGANA, &horasGana, &minutosGana, &segundosGana);
 
-    printf("El ganador final fue el corredor: %d en %d horas %d minutos %d segundos y %d giros\n", GANA, horasGana, minutosGana, segundosGana, GIROSGANA);
-    printf("Terminaron la etapa final %d corredores.\n", SELEC);
-}
-
-void TiempoEnHMS(int DATO, int *REF_H, int *REF_M, int *REF_S)
-{
-    *REF_H = (int)floor(DATO / 3600);
-    DATO = DATO - *REF_H * 3600;
-    *REF_M = (int)floor(DATO / 60);
-    *REF_S = DATO - *REF_M * 60;
+    printf("El ganador de la etapa final es el corredor: %d\n", GANA);
+    printf("El tiempo total de la etapa final es de: %d horas, %d minutos y %d segundos\n", horasGana, minutosGana, segundosGana);
+    printf("El corredor ganador dio %d giros en total\n", GIROSGANA);
 }
 
 // Funciones
 int TiempoEnSeg(int VH, int VM, int VS)
 {
-    int tiempoEnSeg = VH * 3600 + VM * 60 + VS;
-    return tiempoEnSeg;
+    return VH * 3600 + VM * 60 + VS;
 }
 
-int AJUSTE(int DVG1, int DDIF1, int DVG2, int DDIF2, int DVG3,
-           int DDIF3, int CORR, int TsegCorr)
+int AJUSTE(int DVG1, int DDIF1, int DVG2, int DDIF2, int DVG3, int DDIF3, int CORR, int TsegCorr)
 {
-    int diferencia;
-    switch (CORR)
+    if (CORR == 1)
     {
-    case DVG1:
-        diferencia = DDIF1;
-        break;
-    case DVG2:
-        diferencia = DDIF2;
-        break;
-    case DVG3:
-        diferencia = DDIF3;
-    default:
-        diferencia = 0;
-        break;
+        TsegCorr = TsegCorr - DVG1 * DDIF1;
     }
-    int ajuste = TsegCorr - diferencia;
-    return ajuste;
+    else if (CORR == 2)
+    {
+        TsegCorr = TsegCorr - DVG2 * DDIF2;
+    }
+    else if (CORR == 3)
+    {
+        TsegCorr = TsegCorr - DVG3 * DDIF3;
+    }
+
+    return TsegCorr;
+}
+
+void TiempoEnHMS(int DATO, int *REF_H, int *REF_M, int *REF_S)
+{
+    *REF_H = DATO / 3600;
+    *REF_M = (DATO % 3600) / 60;
+    *REF_S = (DATO % 3600) % 60;
 }
