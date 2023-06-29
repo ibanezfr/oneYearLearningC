@@ -11,10 +11,20 @@
 *                                                                              *
 ********************************************************************************
 ¿Qué debe recibir mi programa?
+1.El usuario debe ingresar:
+    1.1: nombreCompleto, sueldoBruto, premio, comida, viaticos,
+diasAusentes, obraSocial, ley19032, jubilacion
 
 ¿Qué debe procesar, operar, realizar mi progrma?¿Qué estrategia debe seguir?
+  El programa debería descontar del sueldoBruto la obraSocial, ley19032, 
+jubilacion, ausencia, pero deben restarse del sueldoBruto sin tener en cuenta
+el premio, la comida los viaticos.
+  Tenemos 22 días laborales, el programa debería dividir el sueldoBruto por 
+esa cantidad de días, y ese sería el monto diario por ausentismo. 
+Con ese monto ya podría descontar los montos.
 
 ¿Qué debe imprimir?
+  Debe simular un recibo de sueldo, con los campos.
 
 /*
 Nombre del Programa: 
