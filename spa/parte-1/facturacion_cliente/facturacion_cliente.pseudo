@@ -1,4 +1,4 @@
-/********************************************************************************
+/*
 Consigna:
 Un cyber cobra $10 por cada minuto de uso de sus computadoras con conexión a
 Internet, y $15 por cada hoja impresa. Además, cobra un cargo adicional por 
@@ -6,7 +6,6 @@ concepto de seguro equivalente a $5 multiplicado por X, donde X es el %1 del
 tiempo de uso. Se necesita generar un recibo para el cliente en el que se
 muestren detalladamente todos los conceptos y la ganancia total del negocio.
 
-********************************************************************************
 ¿Qué recibe el programa?
 
         1. Tiempo de uso (variable: tiempoUso)
@@ -49,34 +48,34 @@ precioHoja := 15
 seguro := 5 * .01
 
 HACER 
-Imprimir : "Ingrese el tiempo utilizado (sin comas): "
-Leer : tiempoUso
+  Imprimir : "Ingrese el tiempo utilizado (sin comas): "
+  Leer : tiempoUso
 
-Imprimir : "¿El cliente imprimió hojas? (SI: 1 , NO: 0)"
-Leer: imprimioHojas
-SI( imprimioHojas = 1 )ENTONCES
-{
-Imprimir : "Ingrese la cantidad de hojas impresas: "
-Leer: cantHojas
-}
+  Imprimir : "¿El cliente imprimió hojas? (SI: 1 , NO: 0)"
+  Leer: imprimioHojas
+  SI( imprimioHojas = 1 )ENTONCES
+  {
+    Imprimir : "Ingrese la cantidad de hojas impresas: "
+    Leer: cantHojas
+  }
 
+  precioFinalPC = tiempoUso * precioMinuto + tiempoUso * seguro
 
-precioFinalPC = tiempoUso * precioMinuto + tiempoUso * seguro
-SI(imprimioHojas)ENTONCES
-{
-precioFinalHojas = cantHojas * precioHoja
-}
+  SI(imprimioHojas)ENTONCES
+  {
+    precioFinalHojas = cantHojas * precioHoja
+  }
 
-Imprimir : "Librería PePe"
-Imprimir : "Precio x Minutos utilizados: ", precioFinalPC
+  Imprimir : "Librería PePe"
+  Imprimir : "Precio x Minutos utilizados: ", precioFinalPC
 
-SI(imprimioHojas)ENTONCES
-{
-Imprimir : "Precio x Hojas Impresas: ", precioHoja
-Imprimir : "Precio TOTAL: ", precioFinalPC + precioHoja
-}
+  SI(imprimioHojas)ENTONCES
+  {
+    Imprimir : "Precio x Hojas Impresas: ", precioHoja
+    Imprimir : "Precio TOTAL: ", precioFinalPC + precioHoja
+  }
 
-Imprimir : "Precio TOTAL: ", precioFinalPC
+  Imprimir : "Precio TOTAL: ", precioFinalPC
 
 FinHacer
 
