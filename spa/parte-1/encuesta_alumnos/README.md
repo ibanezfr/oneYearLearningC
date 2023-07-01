@@ -53,7 +53,7 @@ promedio que obtuvo.
 ### [Codificación en lenguaje C](./encuesta_alumnos.c)
 ***
 
-<a href="../../../assets/images/thumbnail-tp1-parte1-ej3-pseudo-y-C.webp"
+<a href="#"
    title="Captura del output en la terminal del ejercicio">
   <img src="../../../assets/images/thumbnail-tp1-parte1-ej3-pseudo-y-C.webp"
        alt="Captura del output en la terminal del ejercicio"
