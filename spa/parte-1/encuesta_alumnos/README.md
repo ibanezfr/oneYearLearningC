@@ -45,3 +45,18 @@ promedio que obtuvo.
   
 `tablaNotas[i,j,k,l]`  
 `tablaNotas[1,1,2,1]`
+
+
+***
+### [Solución en pseudocódigo](./encuesta_alumnos.pseudo)
+
+### [Codificación en lenguaje C](./encuesta_alumnos.c)
+***
+
+<a href="../../../assets/images/thumbnail-tp1-parte1-ej3-pseudo-y-C.webp"
+   title="Captura del output en la terminal del ejercicio">
+  <img src="../../../assets/images/thumbnail-tp1-parte1-ej3-pseudo-y-C.webp"
+       alt="Captura del output en la terminal del ejercicio"
+       width="555" height="300"
+       style="border: 1px solid black; text-align: center;">
+</a>
