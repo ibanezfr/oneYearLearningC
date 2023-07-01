@@ -1,0 +1,71 @@
+/*
+Nombre del Programa: encuesta-jabones
+Autor: Franco Ibañez
+Fecha de creación: 22 de abril de 2023
+Fecha de modificación: 1 de julio de 2023
+Versión: 02
+Nombre del archivo: encuesta_jabones_en_polvo.pseudo
+Descripción: realiza una encuesta para determinar las preferencias de jabones en
+polvo en una población específica. Permite ingresar y recopilar los datos sobre 
+las marcas elegidas por los participantes, y luego genera un informe con la 
+cantidad de personas y el porcentaje que representa cada marca.
+*/
+
+PROGRAMA encuesta-jabones
+  CONSTANTES
+    FILAS=3
+    COLUMNAS=7
+    POS=7
+
+  TiposEstructurados 
+    MARCAS=ARREGLO[POS] : STRING(15)
+    ENCUESTA=ARREGLO[FILAS, COLUMNAS] : REAL(6,2)
+
+  VARIABLES
+    tablaResultados : ENCUESTA
+    arrMarcas : MARCAS
+    
+  SubPrograma llenarMarcas(*arrMarcas : ARREGLO) 
+    VARIABLES
+    i : ENTERO(1)
+
+    RepetirPara i = 1, 7, 1
+      Imprimir : "Ingrese la Marca 1: "
+      Leer: *arrMarcas[i]
+    FinRepetirPara
+  FinSubprograma
+
+  SubPrograma llenarTablaResultados(*tablaResultados : ENCUESTA)
+    VARIABLES
+    i : ENTERO(1)
+    contador : ENTERO(6)
+
+    contador := 0
+
+    RepetirPara i = 1, 7, 1
+      Imprimir: "Cantidad de gente para la Marca arrMarcas[i]: "
+      Leer: *tablaResultados[1,i]
+      contador := contador + *tablaResultados[1,i]
+    FinRepetirPara
+
+    RepetirPara i = 1, 7, 1
+      *tablaResultados[2,i] := (*tablaResultados[1,i] * 100) / contador
+    FinRepetirPara
+  FinSubprograma
+
+
+llenarMarcas(arrMarcas)
+llenarTablaResultados(tablaResultados)
+
+
+Imprimir : "******************************************************************\
+            *******"
+Imprimir : "|Marcas  |  %c    |  %c    |  %c    |  %c    |  %c    |  %c    |  \
+            %c    |",arrMarcas[1],arrMarcas[2]
+Imprimir : "|Cant. P.|  %.0f  |  %.0f  |  %.0f  |  %.0f  |  %.0f  |  %.0f  |  \
+            %.0f  |",tablaResultados[1,1],tablaResultados[1,2]
+Imprimir : "|Por.    |  %.0f  |  %.0f  |  %.0f  |  %.0f  |  %.0f  |  %.0f  |  \
+            %.0f  |",tablaResultados[2,1],tablaResultados[2,2]
+Imprimir : "******************************************************************\
+            *******"
+FinPrograma
