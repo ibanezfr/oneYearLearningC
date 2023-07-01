@@ -55,7 +55,7 @@ promedio que obtuvo.
 
 <a href="#"
    title="Captura del output en la terminal del ejercicio">
-  <img src="../../../assets/images/thumbnail-tp1-parte1-ej3-pseudo-y-C.webp"
+  <img src="../../../../assets/images/thumbnail-tp1-parte1-ej3-pseudo-y-C.webp"
        alt="Captura del output en la terminal del ejercicio"
        width="555" height="300"
        style="border: 1px solid black; text-align: center;">
