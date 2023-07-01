@@ -12,7 +12,7 @@ promedio que obtuvo.
 
 ## ESTRATEGIA
 
-1. ENTRADA (18)
+1. ENTRADA 
     - `1.1` Ingresar 3 notas del grupo 1
     - `1.2` Ingresar 3 notas del grupo 2
     - `1.3` Ingresar 3 notas del grupo 3
