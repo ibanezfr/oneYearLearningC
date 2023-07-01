@@ -3,7 +3,7 @@ Nombre del Programa: Encuesta Alumnos
 Autor: Franco Ibañez
 Fecha de creación: 22/04/2023
 Fecha de modificación: 01/07/2023
-Versión: 1.2
+Versión: 02
 Nombre del archivo: encuesta_alumnos.c
 Descripción: Este programa recolecta las notas que cada grupo le asigna a cada
 una de las profesoras para, al final, imprimir un informe detallando el conjunto

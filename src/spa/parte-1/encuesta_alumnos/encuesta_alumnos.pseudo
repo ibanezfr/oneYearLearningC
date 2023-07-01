@@ -1,3 +1,10 @@
+/* 
+Programa escrito por: Franco Ibañez
+Fecha: 22 de abril del 2023
+Versión: 02
+Nombre del archivo: encuesta_alumnos.pseudo
+Este programa calcula y muestra las notas asignadas por los alumnos a las 
+maestras en una escuela primaria. */
 
 PROGRAMA
 CONSTANTES
