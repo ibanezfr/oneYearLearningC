@@ -1,82 +1,57 @@
 
-Programa
+PROGRAMA
+CONSTANTES
+FILAS=6
+COLUMNAS=3
+POS=3
 
-//Variables
-M1G1, M1G2, M1G3, M1G4, M2G5, M2G1, M2G2, M2G3, M2G4, M2G5, M3G1, M3G2,
-M3G3, M3G4, M3G5: Entero 2
-accM1, accM2, accM3: Entero 2
-prmM1, prmM2, prmM3: Float 4,2
-accM1 := 0
-accM2 := 0
-accM3 := 0
+TiposEstructurados
+NOTAS=ARREGLO[FILAS,COLUMNAS] : ENTERO(2)
+PROM=ARREGLO[POS] : REAL(4.2)
 
-Hacer
+VARIABLES
+tablaNotas: NOTAS
+arrProm: PROM
+i: Entero(1) // i será las filas
+j: Entero(1) // j será las columnas
 
-// Notas de la maestra 1
-Imprimir: "Ingrese la nota del G1 a M1: "
-Leer: M1G1
-accM1 := accM1 + M1G1
-Imprimir: "Ingrese la nota del G2 a M1: "
-Leer: M1G2
-accM1 := accM1 + M1G2
-Imprimir: "Ingrese la nota del G3 a M1: "
-Leer: M1G3
-accM1 := accM1 + M1G3
-Imprimir: "Ingrese la nota del G4 a M1: "
-Leer: M1G4
-accM1 := accM1 + M1G4
-Imprimir: "Ingrese la nota del G5 a M1: "
-Leer: M1G4
-accM1 := accM1 + M1G5
 
-// Recolección de datos
-// Notas de la maestra 2
-Imprimir: "Ingrese la nota del G1 a M2: "
-Leer: M2G1
-accM2 := accM2 + M2G1
-Imprimir: "Ingrese la nota del G2 a M2: "
-Leer: M2G2
-accM2 := accM2 + M2G2
-Imprimir: "Ingrese la nota del G3 a M2: "
-Leer: M2G3
-accM2 := accM2 + M2G3
-Imprimir: "Ingrese la nota del G4 a M2: "
-Leer: M2G4
-accM2 := accM2 + M2G4
-Imprimir: "Ingrese la nota del G5 a M2: "
-Leer: M2G5
-accM2 := accM2 + M2G5
-// Notas de la maestra 3
-Imprimir: "Ingrese la nota del G1 a M3: "
-Leer: M3G1
-accM3 := accM3 + M3G1
-Imprimir: "Ingrese la nota del G2 a M3: "
-Leer: M3G2
-accM3 := accM3 + M3G2
-Imprimir: "Ingrese la nota del G3 a M3: "
-Leer: M3G3
-accM3 := accM3 + M3G3
-Imprimir: "Ingrese la nota del G4 a M3: "
-Leer: M1G4
-accM3 := accM3 + M3G4
-Imprimir: "Ingrese la nota del G5 a M3: "
-Leer: M1G5
-accM3 := accM3 + M3G5
+INICIO
+RepetirPara i:=1, 6, 1
 
-// Fin recolección de datos
+  RepetirPara j:=1, 3, 1
 
-//Operaciones con los datos
-prmM1 := accM1 / 5
-prmM2 := accM2 / 5
-prmM3 := accM3 / 5
-Imprimir: "La maestra M1 recibió M1G1 puntos del G1, M1G2 puntos del
- G2, M1G3 puntos del G3, M1G4 puntos del G4 y M1G5 del G5"
-Imprimir: "La maestra M2 recibió M2G1 puntos del G1, M2G2 puntos del
- G2, M2G3 puntos del G3, M2G4 puntos del G4 y M2G5 del G5"
-Imprimir: "La maestra M3 recibió M3G1 puntos del G1, M3G2 puntos del
- G2, M3G3 puntos del G3, M3G4 puntos del G4 y M3G5 del G5"
-// Fin Operaciones con los datos
+    Imprimir: "Ingrese la nota del G", i ,"para la Maestra ",j,": " 
+    Leer: tablaNotas[i,j]
 
-FinHacer
+  FinRepetirPara
 
+FinRepetirPara
+
+RepetirPara j:= 1, 3, 1
+
+  RepetirPara i:= 1, 6, 1
+
+    arrProm[j] = arrProm + tablaNotas[i,j]
+
+  FinRepetirPara
+
+  arrProm[j] = arrProm[j] / 6
+
+FinRepetirPara
+
+
+Imprimir: "******************************************"
+Imprimir: "|     | Maestra 1 |Maestra 2 | Maestra 3 |" 
+Imprimir: "| G1  |           |          |           |"
+Imprimir: "| G2  |           |          |           |"
+Imprimir: "| G3  |           |          |           |"
+Imprimir: "| G4  |           |          |           |"
+Imprimir: "| G5  |           |          |           |"
+Imprimir: "| G6  |           |          |           |"
+Imprimir: "******************************************"
+Imprimir: "|NOTA |           |          |           |"
+Imprimir: "******************************************"
+
+FinInicio
 FinPrograma
