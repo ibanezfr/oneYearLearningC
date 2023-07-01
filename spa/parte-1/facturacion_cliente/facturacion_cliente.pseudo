@@ -1,35 +1,3 @@
-/*
-Consigna:
-Un cyber cobra $10 por cada minuto de uso de sus computadoras con conexión a
-Internet, y $15 por cada hoja impresa. Además, cobra un cargo adicional por 
-concepto de seguro equivalente a $5 multiplicado por X, donde X es el %1 del
-tiempo de uso. Se necesita generar un recibo para el cliente en el que se
-muestren detalladamente todos los conceptos y la ganancia total del negocio.
-
-¿Qué recibe el programa?
-
-        1. Tiempo de uso (variable: tiempoUso)
-        2. Hojas impresas (variable: cantHojas)
-
-¿Cómo debe procesar los datos?
-
-    Debe calcular el producto entre el monto fijo y el tiempo utilizado y en la
-variable costoUtilizacion.
-    Debe calcular el monto en concepto de seguro, de la siguiente forma:
-$5 * tiempoUso y sumarlo al costo final por la utilización.
-    Debe calcular el precio por X cantidad de hojas.
-
-¿Qué debe devolver el programa?
-
-    Debe imprimir una suerte de recibo con el detalle de:
-          Librería PePe:
-
-          Utilización PC: $
-          Impresión: $
-
-          Total: $
-*/
-
 PROGRAMA Librería PePe
 CONSTANTES 
 precioMinuto : Entero 2
