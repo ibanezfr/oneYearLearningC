@@ -5,7 +5,9 @@ Implementar como procedimientos los algoritmos de ordenación por `selección` y
 sentido descendente. Utilizarlos en un programa que lea un vector de N
 posiciones y mostrarlo ordenado en ambos sentidos.
 ***
+## [Codificación en C](./ordenacion-asc-desc.c)
 
+## Pseudocódigo
 ``` 
 Programa ordenacion-asc-desc
 Constantes
