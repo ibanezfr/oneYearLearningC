@@ -92,3 +92,10 @@ FinInicio
 FinPrograma
 
 ```
+<a href="#"
+   title="Captura del output en la terminal del ejercicio">
+  <img src="../../../../assets/images/thumbnail-parte-5-ordenacion-asc-desc.webp"
+       alt="Captura del output en la terminal del ejercicio"
+       width="555" height="300"
+       style="border: 1px solid black; text-align: center;">
+</a>
