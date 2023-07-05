@@ -73,7 +73,7 @@ Hacer
 
   RepetirMientras ( sigue < > 0 )
     elegir-columna(REF colElegida);
-    ordenar-e-imprimir(REF miTabla,colElegida,)
+    ordenar-e-imprimir(REF miTabla, colElegida, COL, FILAS)
     Imprimir: "¿Desea ordenar la matriz en función de otra columna?:
                1 (Si) 0 (NO)"
     Leer: sigue;
