@@ -3,7 +3,7 @@ Se desea cargar una matriz de 14x50, ordenarla por una columna indicada, y
 luego imprimir la matriz resultado. La ordenación también debe realizarla un
 procedimiento.
 
-```java
+```ruby
 Programa Matriz-14x50
 Constantes
 COL : Entero 3;
@@ -20,7 +20,7 @@ COL := 14;
 FILAS := 50;
 
 Inicio
-// El usuario deberá llenar la matriz por filas.
+/* El usuario deberá llenar la matriz por filas.*/
 Procedimiento cargar-matriz (REF M : matriz)
 Variables
 contCol, contFilas : Entero 3
@@ -33,13 +33,13 @@ FinRepetirPara
 
 FinProcedimiento
 
-// Pide al usuario una columna para ordenar la matriz
+/* Pide al usuario una columna para ordenar la matriz */
 Procedimiento elegir-columna (REF col : Entero 2)
   Imprimir: "Ingrese una columna para ordenar la matriz según sus valores: ";
   Leer: col;
 FinProcedimiento
 
-// Ordena e imprime la matriz según una columna dada
+/* Ordena e imprime la matriz según una columna dada */
 Procedimiento ordenar-e-imprimir (REF N : matriz, c : Entero 2, 
                                   C : Entero 2, F : Entero 2)
 Variables 
@@ -50,7 +50,7 @@ Hacer
 RepetirPara i = 1; i = F - 1; 1
   RepetirPara j = i + 1; j = F; 1
       aux := N(i);
-      Si N(i)(c) < N(j)(c) Entonces // Ordena de mayor a menor
+      Si N(i)(c) < N(j)(c) Entonces /* Ordena de mayor a menor */
         N(i) := N(j);
         N(j) := aux;
       FinSi
