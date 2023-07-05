@@ -15,6 +15,7 @@ matriz : ARREGLO(FILAS)(COL) : Entero 3 : Entero 3
 Variables
 miTabla : matriz;
 colElegida : Entero 2;
+sigue: Entero 1;
 
 COL := 14;
 FILAS := 50;
@@ -64,6 +65,21 @@ RepetirPara i = 1; i = F; 1
 FinRepetirPara
 
 FinProcedimiento
+
+Hacer
+  cargar-matriz(REF miTabla);
+
+  sigue := 1;
+
+  RepetirMientras ( sigue < > 0 )
+    elegir-columna(REF colElegida);
+    ordenar-e-imprimir(REF miTabla,colElegida,)
+    Imprimir: "¿Desea ordenar la matriz en función de otra columna?:
+               1 (Si) 0 (NO)"
+    Leer: sigue;
+  FinRepetirMientras 
+
+FinHacer
 
 FinInicio
 
