@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include "limpiar.h"
 
-#define COL 3
-#define FILAS 3
+#define COL 6
+#define FILAS 5
 
 typedef int matriz[FILAS][COL];
 
@@ -24,10 +25,12 @@ int main()
 
     ordenar_e_imprimir(&miTabla, colElegida, COL, FILAS);
 
-    printf("¿Desea ordenar la matriz en función de otra columna?: 1 (Si) \
-    0 (NO)");
-
-    scanf("%d", &sigue);
+    do
+    {
+      printf("¿Desea ordenar la matriz en función de otra columna?: 1 (Si)");
+      printf(" 0 (NO): ");
+      scanf("%d", &sigue);
+    } while (sigue != 0 && sigue != 1);
 
   } while (sigue != 0);
 
@@ -41,7 +44,9 @@ void cargar_matriz(matriz *M, int filas, int col)
   {
     for (contFilas = 0; contFilas < filas; contFilas++)
     {
-      printf("Ingrese la columna %d de la fila %d: ", contCol + 1, contFilas + 1);
+      limpiar();
+      printf("Columna %d: \n", contCol + 1);
+      printf("Fila %d : ", contFilas + 1);
       scanf("%d", &(*M)[contFilas][contCol]);
     }
   }
@@ -49,13 +54,16 @@ void cargar_matriz(matriz *M, int filas, int col)
 
 void elegir_columna(int *col)
 {
-  printf("Ingrese una columna para ordenar la matriz según sus valores: ");
-  scanf("%d", col);
+  do
+  {
+    printf("Ingrese una columna para ordenar la matriz según sus valores: ");
+    scanf("%d", col);
+  } while (col < 1 && col > COL);
 }
 
 void ordenar_e_imprimir(matriz *N, int col, int C, int F)
 {
-  int i, j, aux;
+  int i, j, k, aux;
 
   for (i = 0; i < F; i++)
   {
@@ -63,7 +71,7 @@ void ordenar_e_imprimir(matriz *N, int col, int C, int F)
     {
       if ((*N)[i][col - 1] < (*N)[j][col - 1])
       {
-        for (int k = 0; k < C; k++)
+        for (k = 0; k < C; k++)
         {
           aux = (*N)[i][k];
           (*N)[i][k] = (*N)[j][k];
@@ -76,7 +84,7 @@ void ordenar_e_imprimir(matriz *N, int col, int C, int F)
   {
     for (j = 0; j < C; j++)
     {
-      printf("%d ", (*N)[i][j]);
+      printf("%02d ", (*N)[i][j]);
     }
     printf("\n");
   }
