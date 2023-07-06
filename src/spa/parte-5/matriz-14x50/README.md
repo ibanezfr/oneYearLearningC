@@ -22,7 +22,7 @@ FILAS := 50;
 
 Inicio
 /* El usuario deberá llenar la matriz por filas.*/
-Procedimiento cargar-matriz (REF M : matriz)
+Procedimiento cargar-matriz (REF M : matriz, int FILAS, int COL)
 Variables
 contCol, contFilas : Entero 3
 RepetirPara contFilas = 1; contFilas = FILAS; 1
