@@ -54,17 +54,17 @@ void imprimirTablaNotas(NOTAS tablaNotas)
   printf("******************************************\n");
   printf("|    | Maestra 1 | Maestra 2 | Maestra 3 |\n");
   printf("******************************************\n");
-  printf("| G1 | %4d      | %4d      | %4d      |\n", tablaNotas[0][0],
+  printf("| G1 |    %02d     |    %02d     |    %02d     |\n", tablaNotas[0][0],
          tablaNotas[0][1], tablaNotas[0][2]);
-  printf("| G2 | %4d      | %4d      | %4d      |\n", tablaNotas[1][0],
+  printf("| G2 |    %02d     |    %02d     |    %02d     |\n", tablaNotas[1][0],
          tablaNotas[1][1], tablaNotas[1][2]);
-  printf("| G3 | %4d      | %4d      | %4d      |\n", tablaNotas[2][0],
+  printf("| G3 |    %02d     |    %02d     |    %02d     |\n", tablaNotas[2][0],
          tablaNotas[2][1], tablaNotas[2][2]);
-  printf("| G4 | %4d      | %4d      | %4d      |\n", tablaNotas[3][0],
+  printf("| G4 |    %02d     |    %02d     |    %02d     |\n", tablaNotas[3][0],
          tablaNotas[3][1], tablaNotas[3][2]);
-  printf("| G5 | %4d      | %4d      | %4d      |\n", tablaNotas[4][0],
+  printf("| G5 |    %02d     |    %02d     |    %02d     |\n", tablaNotas[4][0],
          tablaNotas[4][1], tablaNotas[4][2]);
-  printf("| G6 | %4d      | %4d      | %4d      |\n", tablaNotas[5][0],
+  printf("| G6 |    %02d     |    %02d     |    %02d     |\n", tablaNotas[5][0],
          tablaNotas[5][1], tablaNotas[5][2]);
   printf("******************************************\n");
 }
@@ -73,7 +73,7 @@ void imprimirTablaNotas(NOTAS tablaNotas)
 // de fila
 void imprimirPromedios(PROM arrProm)
 {
-  printf("|NOTA|   %4.2f    |   %4.2f    |   %4.2f    |\n", arrProm[0],
+  printf("|NOTA|   %04.2f    |   %04.2f    |   %04.2f    |\n", arrProm[0],
          arrProm[1], arrProm[2]);
   printf("******************************************\n");
 }

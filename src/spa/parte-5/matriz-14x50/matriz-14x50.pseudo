@@ -1,9 +1,9 @@
-# Matriz 14 x 50
+/*
 Se desea cargar una matriz de 14x50, ordenarla por una columna indicada, y
 luego imprimir la matriz resultado. La ordenación también debe realizarla un
 procedimiento.
+*/
 
-```ruby
 Programa Matriz-14x50
 Constantes
 COL : Entero 3;
@@ -87,5 +87,3 @@ FinHacer
 FinInicio
 
 FinPrograma
-
-```
