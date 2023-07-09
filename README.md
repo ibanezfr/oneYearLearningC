@@ -17,8 +17,7 @@ PseudoC-to-C is a comprehensive guide for anyone looking to learn the C programm
       - spa/
           - apuntes-teoricos/
           - parte-1/
-          - parte-2/
-          - parte-3/
+          - ... 
           - parte-5/
               - matriz-14x50/
                   - README.md
