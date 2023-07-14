@@ -10,7 +10,7 @@ COL : Entero 3;
 FILAS : Entero 3;
 
 TiposEstructurados 
-matriz : ARREGLO(FILAS)(COL) : Entero 3 : Entero 3
+matriz : ARREGLO(FILAS)(COL) : Entero 3 
 
 Variables
 miTabla : matriz;
@@ -22,7 +22,7 @@ FILAS := 50;
 
 Inicio
 /* El usuario deberá llenar la matriz por filas.*/
-Procedimiento cargar-matriz (REF M : matriz, int FILAS, int COL)
+Procedimiento cargar-matriz (REF M : matriz, FILAS : Entero 3, COL : Entero 3)
 Variables
 contCol, contFilas : Entero 3
 RepetirPara contFilas = 1; contFilas = FILAS; 1
@@ -51,19 +51,19 @@ Hacer
 /* Ordena de mayor a menor, Selection Sort*/
 RepetirPara i = 1; i = F - 1; 1
   RepetirPara j = i + 1; j = F; 1
-      Si N(i)(c) < N(j)(c) Entonces 
+      Si N(i,c) < N(j,c) Entonces 
         RepetirPara k = 1; k = C; 1
-          aux := N(i)(k);
-          N(i)(k) := N(j)(k);
-          N(j)(k) := aux;
+          aux := N(i,k);
+          N(i,k) := N(j,k);
+          N(j,k) := aux;
         FinRepetirPara
       FinSi
   FinRepetirPara
 FinRepetirPara
 
-RepetirPara i = 1; i = F; 1
-  RepetirPara j = 1; j = C; 1
-    Imprimir: N(i)(j) + " "
+RepetirPara i = 1; F; 1
+  RepetirPara j = 1; C; 1
+    Imprimir: N(i,j) + " "
   FinRepetirPara
 FinRepetirPara
 
@@ -87,5 +87,6 @@ FinHacer
 FinInicio
 
 FinPrograma
+
 
 ```
