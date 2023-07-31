@@ -1,0 +1,42 @@
+PROGRAMA reciboDeSueldo
+  VARIABLES
+  nombreCompleto : STRING   
+  sueldoBruto, premio, comida, viaticos,
+    obraSocial, ley19032, jubilacion,  
+    montoPorAusentismo, sueldoNeto : REAL(5,2)
+  diasAusentes : ENTERO(10)
+  
+  sueldoNeto := sueldoBruto
+  
+  HACER 
+  Imprimir: "Ingrese el nombre y apellido: "
+  Leer: nombreCompleto
+  Imprimir: "Ingrese el Sueldo Bruto: "
+  Leer: sueldoBruto
+  Imprimir: "Ingrese el premio, comida, viáticos: " 
+  Leer: premio, comida, viaticos 
+  Imprimir: "Ingrese la cantidad de días ausentes: "
+  Leer: diasAusentes
+  
+  // Calculo el montoPorAusentismo
+  montoPorAusentismo := sueldoBruto / 22
+  
+  Si (diasAusentes < > 0) Entonces
+      sueldoNeto := sueldoBruto - montoPorAusentismo * diasAusentes
+  FinSi
+  
+  sueldoNeto := sueldoNeto - 2((sueldoBruto * 3) / 100) - 
+              (sueldoBruto * 11) / 100 
+  sueldoNeto := sueldoNeto + comida + viaticos + premio
+  
+  
+  Imprimir: "Empleado: ", nombreCompleto
+  Imprimir: "Sueldo Bruto: ", sueldoBruto
+  Imprimir: "Días de ausentismo: ", diasAusentes
+  
+  Imprimir: "Sueldo Neto: ", sueldoNeto
+  
+  FinHacer
+  
+  FinPrograma
+  

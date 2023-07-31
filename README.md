@@ -9,5 +9,30 @@
 
 [Button Example2]: https://img.shields.io/badge/ENGLISH-37a779?style=for-the-badge 
 
-
 PseudoC-to-C is a comprehensive guide for anyone looking to learn the C programming language, covering everything from syntax to advanced topics such as data structures and algorithms. With guides on setting up a C development environment, this repository is the perfect place to start your journey in C programming.
+
+## Internal Structure
+- root/  
+  - src/
+      - spa/
+          - apuntes-teoricos/
+          - parte-1/
+          - ... 
+          - parte-5/
+              - matriz-14x50/
+                  - README.md
+                  - matriz-14x50.c  
+      - eng/
+  - assets/
+      - images/
+  - markdown-root
+  - LICENSE
+  - README.md
+
+## Preview some screenshots:
+<a href="#" title="Captura del output en la terminal del ejercicio">
+  <img src="./assets/images/thumbnail-tp1-parte1-ej3-pseudo-y-C.webp" 
+       alt="Captura del output en la terminal del ejercicio" 
+       width="555" height="300"
+       style="border: 1px solid black; text-align: center;">
+</a>
