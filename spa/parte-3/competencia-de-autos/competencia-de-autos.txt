@@ -47,8 +47,7 @@ Fin Programa
          * tiempo utilizado para terminar la prueba (expresado en horas, minutos y 
 segundos),
          * el número de identificación 
-         * la cantidad de giros completos 
-realizados.
+         * la cantidad de giros completos realizados.
 
     Si un corredor que inició la prueba no la finaliza por algún problema,
 los valores del tiempo están en cero. Se informa antes de iniciar cada prueba, la

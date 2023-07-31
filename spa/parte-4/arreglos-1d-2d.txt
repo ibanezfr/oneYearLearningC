@@ -1,0 +1,21 @@
+************************************************************************************
+29-05-2023
+Arreglos: Estructura de datos definidos por el usuario.
+
+Es un conjunto de información en espacios consecutivos, del mismo tipo de dato.
+En pseudocodigo la primer posición es 1 , en C es 0.
+
+El vector es un tipo de dato:
+Sintaxis
+Programa: VECTOR 
+
+CONSTANTE 
+POS = 10
+
+TIPO ESTRUCTURADO 
+
+VEC = ARREGLO[10]:ENTERO(3)
+// VEC=ARREGLO[POS]:ENTERO(3)
+
+VARIABLES
+v1:vec
