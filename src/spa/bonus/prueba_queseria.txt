@@ -1,0 +1,187 @@
+   ++++++++++++++  Examen Quesería 7 de agosto 23 +++++++++++++++++++
+
+  Códigos totales: 87
+  
+  Mis tipos : 
+    queso :          1
+    salame:          2
+    longaniza :      3
+    otroFiambre :    4
+
+  Este será el Catálogo:
+     |   1       |     2     |    3    |     4      |
+     |   stkMin  | stkActl   |  tipo   |  prVenta   |
+     ================================================
+  1  |           |           |         |            |
+  2  |    5      |    2      |         |            |
+  3  |           |           |         |            |
+  87 |           |           |         |            |
+
+
+  Esta será la planilla de Venta: (Me conviene un procedimiento para 
+                                    inicializarlo en 0)
+ 
+ [  ,  ,  , 20 ,  ,   , 15  , 3 ,  ] 
+  1  2  3   4   5   6   7    8  87
+
+
+  Planilla Reposición:  (Debe inicializarlo en 0)
+ [  ,  ,  ,  ,  ,   ,  ,  ,  ] 
+  1  2  2  3  4   5  6  7  87
+
+
+verificarStockYActVenta()
+1 procedimiento que con el dato del codigo y la cantSolic, vaya y consulte mi 
+catGral, y si la cantSolic es menor que el stkActl, entonces actualiza mi 
+planVta. Caso contrario, imprime mensaje "NO hay stock". En caso de éxito, 
+actualiza contadorVentas.
+
+
+calRecaudacionTipoOTRO()
+Le voy a pasar por copia el catGral, la planVta, y la lógica dentro debería
+recorrer el vector ventas, y cuando encuentre algo distinto de cero, debe 
+utilizar la variable de control ( i ) para consultar el catGral, leer su tipo
+y si es tipo = 4, leer su precio y multiplicarlo por la cantidad y guardarlo.
+
+calcPorcentaje()
+Será una función que recibe el codigo del producto y el contador de ventas 
+totales y en función de eso debe retonar o devolver el porcentaje.
+
+
+
+* Comienzo a armar algoritmo: *
+
+  Programa Quesería
+
+  Tipos Estructurados  /* Esto debe ir primero */
+
+    MAT : ARREGLO(87,4) : Entero(4) 
+    VEC : ARREGLO(87) : Entero(4)
+
+  Variables   /*Son las variables globales del programa principal */
+    catGral : MAT      
+    planVta : VEC  //Asumo inicializado en 0
+    planRepo : VEC //Asumo inicializado en 0
+    sigue : Entero(1)
+    i : Entero(2)
+    codProdcto : Entero(2)                 porcLonga, porcSalame : Real(3.1)   
+    cantSolic : Entero(1)
+    contadorVentas : Entero(4)
+
+
+  Procedimientos
+  
+  Procedimiento verificarStockYActVenta(REF A : MAT, cod : Entero(2), 
+                           cant : Entero(1), REF B : VEC, REF acc : Entero(4))
+    Variables
+    i : Entero(2)
+
+    Hacer
+      Si( A(cod, 2) < cant)entonces
+        Imprimir: "No hay stock suficiente"
+      Sino
+        acc := acc + cant
+        B(cod) := B(cod) + cant
+        A(cod,2) := A(cod,2) - cant
+      FinSi
+    FinHacer
+  FinProcedimiento
+
+  Procedimiento calRecaudacionTipoOTRO(A : MAT, B : VEC)
+  Variables
+  recaudacion : Enetero(4)
+  i : Entero(2)
+
+  recaudacion := 0
+
+  Hacer
+    RepPara(i=1, i=87, i++)
+      Si( B(i) != 0 ) Entonces
+        Si( A(i,3) = 4 ) Entonces 
+          recaudacion := recaudacion + B(i) * A(i,4)
+        FinSi
+      FinSi
+    FRepPara
+
+    Imprimir: "Se recaudaron $" + recaudacion + " de tipo OTRO"
+  FinHacer
+  FinProcedimiento
+
+  Funcion calcPorcentaje(N : Entero(1), acc : Entero(4), A : Mat, B : VEC)
+      Variables
+      accParcial: Entero(4)
+
+      accParcial := 0
+
+      Hacer
+        RepPara(i=1, i=87, i++)
+          Si (B(i) != 0) Entonces
+            Si ( A(i,3) = N ) Entonces
+              accParcial := accParcial + B(i)
+            FinSi
+          FinSi
+
+      calcPorcentaje(accParcial * 100 / acc)             150 ----> 100%
+                                                         15 ----> 15 * 100 / 150
+      FinHacer
+  FinFuncion
+
+  Procedimiento armarPlanillaAReponer (A : MAT, REF C : VEC)
+    Variables
+      i : Entero(2)
+
+    Hacer
+      Imprimir:   "Planilla de reposición"
+      Imprimir: "| Código | Cant a Reponer |"
+
+      RepPara(i=1, i=87, i++)  
+        Si( A(i,2) < A(i,1))Entonces
+            C(i) := TRUNCAR( A(i,2) * 0.3 )
+            Imprimir:"|  i  |  C(i) |"
+        FinSi
+      FinRepPara
+
+
+
+    FinHacer
+
+  FinProcemiento
+
+  Hacer  
+    
+    accVentas := 0 
+    sigue := 1
+
+    RepMientras( sigue = 1 )       /* Este while simboliza el tiempo que */
+                                   /* está abierta la caja */
+      RepPara( i=1, i=5, i++)
+        Imprimir: "Ingrese código: "
+        Leer: codProdcto
+        Imprimir: "Ingrese cantidad: "
+        Leer: cantSolic
+
+        verificarStockYActVenta(REF catGral, codProdcto, cantSolic,
+                                        REF planVta, REF accVentas)
+
+      FRepPara
+
+      Imprimir: "¿Sigue atendiendo? (Si : 1  / No: 0) "
+      Leer: sigue
+
+    FRepMientras
+
+  calRecaudacionTipoOTRO(catGral, planVta)
+
+
+  porLonga := calcPorcentaje( 3, accVentas, catGral, planVta)
+  porcSalame := calcPorcentaje( 2 , accVentas, catGral, planVta)
+
+  Imprimir: "Las longanizas son el " + porcLonga + " % del total"
+  Imprimir: "Los salames son el " + porcSalame + " % del total"
+
+
+  armarPlanillaAReponer( catGral, REF planRepo )
+
+  FinHacer
+  
+FinPrograma
