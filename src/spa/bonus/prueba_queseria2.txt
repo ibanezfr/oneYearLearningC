@@ -1,0 +1,140 @@
+(Aprobado 2023)
+
+• Proponer una estrategia de abordaje a la resolución del problema planteado
+• Con los conocimientos que dispone actualmente diseñar una solución y 
+desarrollar un programa en pseudocódigo / c++
+
+Una quesería tiene 20 variedades de quesos, 10 de salames y 20 de longanizas y 
+20 de otros fiambres. Se cuenta con una planilla donde cada fila es un producto,
+cada columna se identifica : stock mínimo, un stock actual, tipo y precio de 
+venta. Simular un día de atención teniendo en cuenta que cada cliente puede 
+adquirir hasta 5 productos, en el caso de que no hubiera stock de alguno de los 
+productos indicárselo al cliente por medio de un mensaje. Se tiene una planilla
+que se actualiza por cada venta donde cada fila es un producto y en la columna 
+se indentifica la cantidad que se va vendiendo. Las ventas se realizan hasta que 
+se indique que se cierra la caja. Se desea visualizar los siguientes resultados:
+
+• Cuánto se recauda por tipo de queso.
+• Que porcentaje representa los quesos y los salames en cantidad de ventas sobre
+el total
+• Armar una planilla de los productos a reponer teniendo en cuenta que el stock
+actual sea menor al stock mínimo, la columna reposición es el 
+stock actual + 50%.
+
+================================================================================
+Programa Queseria
+CONSTANTES
+    cantProd = 75
+TIPOS DE DATOS ESTRUCTURADOS
+    matProd = ARREGLO(cantProd, 4) : Entero(5)
+    vecProd = ARREGLO(cantProd) : Entero(10)
+
+
+Procedimiento atenderCliente(REF mProduct : matProd, REF vVenta : vecProd)
+Variables 
+    i, atender, prod
+
+Hacer
+    i := 0
+    atender := 1
+    Repetir Mientras (i <= 5 y atender < > 0)
+        i := i + 1
+        Imprimir: "Ingrese el producto"
+        Leer: prod
+        Si (mProduct[prod,2] = 0) Entonces
+            Imprimir: "No contamos con stock."
+        Sino
+            vVenta[prod] := vVenta[prod] + 1
+            mProduct[prod,2] := mProduct[prod,2] - 1
+        FinSi
+        Imprimir: "¿Desea llevar otro producto? No = 0 / Si = cualquier numero"
+        Leer: atender
+    Fin Repetir Mientras
+Fin Hacer
+Fin Procedimiento
+
+Procedimiento iniciliazaVentas(REF V: vecProd, n: Entero(2))
+    Variables 
+        i : Entero(2)
+    Hacer
+        Repetir Para i = 1, n, 1
+            V[i] := 0
+        Fin Repetir Para
+    Fin Hacer
+Fin Procedimiento
+
+Procedimiento recaudaQueso(vProd : matProd, vVentas : vecProd, n : Entero(2))
+    Variables
+        i : Entero(2)
+    Hacer
+        Repetir Para i := 1, n, 1
+            Si( vProd[i, 3] = 1) Entonces /* 1 representa el tipo de queso */
+                Imprimir: "El queso ", i, " recaudó $ ", 
+                            vProd[i,4] * vVentas[i]
+            FinSi
+    Fin Hacer
+FinProcedimiento
+
+Funcion Porcentaje( vProd: matProd, vVentas: vecProd, tipo : Entero(1), 
+                    dim : Entero(2)) : Real(5,2)
+    Variables   
+        total, prodElegido : Entero (7) /* Acumula el total de 
+        i : Entero(2)                           productos vendidos*/
+
+    Hacer
+        prodElegido := 0
+        total := 0
+        Repetir Para i:= 1, dim, 1
+            total := total + vVentas[i]
+            Si(vProd[i,3] = tipo) Entonces
+                prodElegido := prodElegido + vVentas[i]
+            Fin Si
+        Fin Repetir Para
+        Retorno (prodElegido * 100) / total
+    Fin Hacer
+Fin Funcion
+
+Procedimiento resposicion( REF repo: vecProd, n : Entero(2), mProd : matProd)
+    Variables
+        i : Entero(2)
+
+    Hacer
+        Repetir Para i := 1, n, 1
+            Si( mProd[i,2] < mProd[i,1]) Entonces
+                repo[i] := mProd[i,2] + mProd[i,2] / 2
+            Sino
+                repo[i] := 0
+            FinSi
+            
+        Fin Repetir Para
+Fin Procedimiento
+
+
+/* Programa Principal */
+Variables
+    cierraCaja : caracter(1)
+    porcQueso, porcSalame : Real(5,2)
+    mProduct : matProd
+    contVenta, matRepo : vecProd
+
+Hacer  
+    Imprimir: "Apertura del día"
+    /* Se presume que la matriz de productos se encuentra cargada */
+    /* Inicializo el contador de ventas */
+    iniciliazaVentas(contVenta, cantProd)
+    Imprimir: "¿Se cierra la caja? S/N"
+    Leer: cierraCaja
+    Repetir Mientras (cierraCaja < > "S")
+        atenderCliente(mProduct, contVenta)
+        Imprimir: "¿Se cierra la caja? S/N"
+        Leer: cierraCaja
+    Fin Repetir Mientras
+    recaudaQueso(mProduct, contVenta, cantProd)
+    porcQueso := porcentaje(mProduct, contVenta, 1, cantProd)
+    porcSalame := porcentaje(mProduct, contVenta, 2, cantProd)
+    Imprimir := "Porcentaje de ventas de queso : ", porcQueso
+    Imprimir := "Porcentaje de ventas de salame : ", porcSalame
+    resposicion(matRepo, cantProd, mProduct)
+Fin Hacer
+
+Fin Programa

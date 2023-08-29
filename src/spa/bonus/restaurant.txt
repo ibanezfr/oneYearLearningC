@@ -1,0 +1,328 @@
+            Algoritmos y Estructuras de Datos - 1er Parcial - 2023 
+            ======================================================
+Un restarant tiene 25 variedades de platos principales, 12 de postres y 20 de 
+bebidas. Se cuenta con una planilla donde cada fila es un producto, y cada 
+columna se identifica con:
+    stock míninimo, stock actual, tipo (plato principal, postre, bebida) y 
+    precio (considerar ENTERO).
+
+Simular un día de atención teniendo en cuenta que cada cliente puede adquirir 
+hasta 3 unidades por tipo de producto, en el caso de que no hubiera stock de 
+alguno de los productos indicarselo al cliente por medio de un mensaje.
+
+Se requiere de otra planilla que se actualizará por cada venta donde cada fila 
+es un producto y en la columna se indetifica la cantidad que se va vendiendo y 
+en otras columnas que indiquen el tipo de entrega para el producto 
+(Delivery y Mostrador).
+
+Las ventas se realizan hasta que se indique que se cierra la caja.
+
+Se desea visualizar los siguientes resultados:
+    * Cuánto recauda en cada tipo de entrega (Delivery y Mostrador).
+    * Qué porcentaje representa los platos, los postres y las bebidas sobre el 
+total de las ventas.
+    * Armar una planilla de los productos a reponer teniendo en cuenta que el 
+stock actual sea menor al stock mínimo, la columna reposición es el stock 
+míninimo + 30 %.
+
+total códigos : 57
+Tipos Productos: Plato (1), Postre (2), Bebida (3)
+Tipo de Entrega: Mostrador (1), Delivery (2)
+
+** Catálogo General** 
+   stkMin   stkAct    tipo     precio
+C |   10  |    8   |         |        |
+Ó |       |        |         |        |
+D |       |        |         |        |
+I |       |        |         |        |
+G |  100  |  50    |         |        |
+O |       |        |         |        |
+
+
+** Planila de Venta **
+    cant    mostrador delivery   
+C |  8    |   3     |    5    |
+Ó |       |         |         |
+D |   4   |   2     |    2    |
+I |       |         |         |
+G |       |         |         |
+O |       |         |         |
+
+
+** Planilla Reposición **
+[13 ,0 ,0 ,0 ,130 , , , , ,  ,  ]        
+ 1        ...                57
+
+miMatriz = ARREGLO(5,3) : Entero (3)
+
+Procedimiento inicialiMiMatriz (REF matriz : ARREGLO(5,3),      ,   ) 
+Variables                           
+i,j : Entero(3)
+
+    Imprimir: "|  Código  |  Cant Reponer |"
+
+RepetirPara i = 1; i = 57; i++
+
+   Si(arreglo(i) != 0)Entonces
+
+        Imprimir: i, arreglo(i)
+
+    FinSi
+
+FinRepetirPara
+
+FinProcedimiento
+
+
+inicialiMiMatriz(REF miMatriz)
+
+
+
+================================================================================
+                            HOJA EN BLANCO 2
+            TIPOS ESTRUCTURADOS, PROCEDIMIENTOS Y FUNCIONES
+
+================================================================================
+
+
+Pragrama Restaurante
+
+Tipos Estructurados
+
+matA : ARREGLO(57,4) : Entero(4)
+
+matB : ARREGLO(57, 3) : Entero(4)
+
+vec : ARREGLO(57) : Entero(4)
+
+Procedimientos
+
+Procedimiento inicialiPlanVentas( REF A : matA )
+Variables
+i,j : Entero(2)
+Hacer
+RepetirPara i = 1,57,1
+RepetirPara j = 1,3,1
+    A(i,j) := 0
+FinRepetirPara
+FinRepetirPara
+FinHacer
+FinProcedimiento
+
+Funcion realizarVenta(REF A : matA, REF B : matB, codProd : Entero(2), 
+                        cantProd : Entero(1), tipoEntrega : Entero(1)) : Entero(1)
+    Si( cantProd < matA( codProd, 2 ) )Entonces
+
+        A( codProd, 2 ) := A( codProd, 2 ) - cantProd
+        B(codProd,1) := B(codProd,1) + cantProd
+        Si(tipoEntrega = 1)Entonces
+            B(codProd,2) := B(codProd,2) + cantProd
+        Sino Si(tipoEntrega = 2)Entonces
+            B(codProd,3) := B(codProd,3) + cantProd
+            FinSi
+        FinSi
+        realizarVenta ( 1 )
+
+    Sino
+
+        realizarVenta ( 0 )
+
+    FinSi
+FinFuncion
+
+Funcion calcuRecauda(REF A : matA, REF B : matB, tipo : Entero(1)) : Entero(4)
+    Variables
+    i : Entero(2)
+    acc : Entero(4)
+    
+    acc := 0
+
+    Hacer
+    Si(tipo = 1)Entonces
+       RepetirPara(i=1,57,1) 
+        Si( B(i,2) != 0 ) Entonces
+            acc := acc + A(i,4) * B(i,2)
+        FinSi
+    FinSi
+    Si (tipo = 2)Entonces
+        epetirPara(i=1,57,1) 
+        Si( B(i,3) != 0 ) Entonces
+            acc := acc + A(i,4) * B(i,3)
+        FinSi
+    FinSi
+    
+    calcuRecauda( acc )
+
+FinFuncion
+
+Procedimiento calcularPorcentajes(REF A: matA, REF B : matB, 
+                            REF plato : REAL(4.1), REF postre : REAL(4.1),
+                            REF bebida : REAL(4.1))
+
+Variables
+accTotal, accPlato, accPostre, accBebida : Entero(4)
+i : entero(2)
+
+HACER
+
+accTotal := 0
+accPlato := 0
+accPostre := 0
+accBebida := 0
+
+RepetirPara(i=1,57,1)
+    Si (B(i,1) != 0)Entonces
+      accTotal := accTotal + B(i,1)
+
+    Caso( A(i,3) )
+      1 :
+        accPlato := accPlato + B(i,1)
+      2 : 
+        accPostre := accPostre + B(i,1)
+      3 :
+        accBebida  := accBebida + B(i,1)
+      Otro caso:
+        break;
+    FinCaso
+
+FinRepetirPara
+
+plato := accPlato * 100 / accTotal
+postre := accPostre * 100 / accTotal
+bebida := accBebida * 100 / accTotal
+
+FinProcedimiento
+
+Procedimiento amarPlanillaReposicion(A : matA, REF C : vec)
+Variables 
+i : Entero(2)
+
+Hacer
+RepetirPara(i=1,57,1)
+    Si(A(i,2) < A(i,1)) Entonces
+        C(i) := A(i,1) + TRUNCAR(A(i,1) * 0.3)
+    FinSi
+FinRepetirPara
+
+FinProcedimiento
+
+Procedimiento imprimirPlanilla( C : vec)
+    Variable
+    i : Entero(2)
+
+    Imprimir: "| Código | Cantidad |"
+    Imprimir: "*********************"
+
+    RepetirPara(i=1,57,1)
+        Imprimir: "|  " +  i + " | " + C(i) + " |"
+    FinRepetirPara
+
+FinProcedimiento
+
+
+
+
+
+
+
+================================================================================
+                        HOJA EN BLANCO 3
+    VARIABLES GLOBALES, HACER, PROGRAMA PRINCIPAL
+
+================================================================================
+
+
+Variables  // globales
+
+CatGral : matA // Asumo cargado en memoria
+PlanVentas : matB
+PlanRepo : vec
+i : Entero(1)
+
+sigue : Entero(1)
+quiereAlgo : Entero(1)
+
+cont3Uni : Entero(1)
+
+auxCod, auxCant : Entero(2)
+tipoVenta: Entero(1)
+resultado : Entero(1)
+recaudaMostrador, racaudaDelivery : Entero(4)
+porcBebida, porcPostre, porcPlato : Real(4.1)
+
+
+HACER
+inicialiPlanVentas(REF PlanVentas)
+
+
+sigue := 1
+
+RepetirMientras (sigue = 1)
+Imprimir: "¿Sigue atendiendo? (Si 1, No 0) "
+Leer: sigue
+
+
+Imprimir: "¿Por mostrador (1) o delivery (2)? "
+Leer: tipoVenta
+
+RepetirPara(j=1,3,1) // j=1(Plato), j=2(Postre), j=3(Bebida)
+
+    quiereAlgo := 1
+
+    Imprimir: "¿Quiere llevar ? , j, "Si (1), No (0)"
+    Leer: quiereAlgo
+
+    Si ( quiereAlgo = 1 ) Entonces
+
+    cont3Uni := 0
+        RepetirMientras (cont3Uni < 3)
+            Imprimir: "Ingrese código"
+            Leer: auxCod
+            Imprimir: "Ingrese cant"
+            Leer: auxCant
+
+        resultado := realizarVenta(REF CatGral, REF PlanVentas, auxCod, auxCant, tipoVenta)
+
+        Si(resultado != 1)Entonces
+            Imprimir: "No hay Stock"    
+        Sino
+            cont3Uni := cont3Uni + auxCant
+        FinSi
+
+    Sino
+        
+        continuar;
+
+    FinSi
+
+        FinRepetirMientras
+
+FinRepetirPara
+
+FinRepetirMientras
+
+recaudaMostrador := calcuRecauda(REF CatGral, REF PlanVentas, 1)
+Imprimir: "Recaudación Mostrador",recaudaMostrador
+
+racaudaDelivery := calcuRecauda(REF CatGral, REF PlanVentas, 2)
+Imprimir: "Recaudación Delivery", recaudaDelivery
+
+
+porcPlato := 0
+porcPostre := 0
+porcBebida := 0
+
+calcularPorcentajes(REF CatGral, REF PlanVentas, REF porcPlato, REF porcPostre,
+                    REF porcBebida)
+
+Imprimir: "Los platos representan el ", porcPlato, " del total"
+Imprimir: "Los postres representan el ", porcPostre, " del total"
+Imprimir: "Los bebidas representan el ", porcBebida, " del total"
+
+amarPlanillaReposicion( CatGral, REF PlanRepo)
+
+imprimirPlanilla( PlanRepo )
+
+FinHacer
+
+FinPrograma
