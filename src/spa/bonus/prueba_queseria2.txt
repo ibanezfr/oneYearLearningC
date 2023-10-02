@@ -107,6 +107,7 @@ Procedimiento resposicion( REF repo: vecProd, n : Entero(2), mProd : matProd)
             FinSi
             
         Fin Repetir Para
+    FinHacer
 Fin Procedimiento
 
 
