@@ -1,0 +1,214 @@
+  En un taller de bicicletas se tiene un registro de los trabajos de reparación
+en curso, ingresando por cada uno: Número de pedido ( 6 dígitos), DNI del
+cliente (8 dígitos), tipo de bicicleta (codificado del 1 al 7) y costo de la
+reparación (valor real) para ser entregada la bicicleta reparada a partir del
+día 5 del mes. Se debe simular el retiro de los trabajos entre el día 5 y 30 del
+mes, durante cada día, por cada cliente que llega a retirar su bicicleta
+asumiendo que llega al taller el día en el que le aseguraron la entrega, se
+ingresa el número de pedido. Se informa si el trabajo está terminado y se
+entrega o el taller le informe al cliente que se va a demorar informando una
+cantidad de días adicionales (entre 1 y 3), debiendo el cliente volver al taller
+para retirar su bicicleta reparada. El taller debe descontar un 10% del costo de
+la reparación por cada demora en un trabajo. Puede ocurrir que no lleguen a
+retirar todos los trabajos encargados.
+
+Al finalizar el día 30 se debe informar:
+
+    a)
+      Listado de los trabajos que se encargaron con alguna demora al momento
+    de solicitar el cliente su entrega con los siguientes datos: número de
+    pedido, DNI del cliente y cantidad total de días de demora pudiendo tener
+    más de una demora, ordenado de manera ascendente por DNI del cliente.
+
+    b)
+      Informar por cada tipo de bicicleta: código de tipo de bicicleta,
+    cantidad  de trabajos entregados sin demora, cantidad de trabajos sin ser
+    retirados al día 30, ordenados por orden descendente por cantidad de
+    trabajos solicitados.
+
+
+=========================  ¿Qué debo completar?  ===============================
+
+A- Datos de Entorno
+    1- Valores iniciales a ingresar (Se refiere a la carga que debe hacerse de
+datos, cuando se arranca el programa)
+
+    2- Especificaciones
+
+    3- Datos de entrada para procesar (Esto el nro de pedido q cada cliente
+trae)
+    4- Datos de salida
+
+B- Elección y justificación de estrucuturas de datos compuestas principales
+    1- Tipos Estructurados
+
+C- Declaración de variables principales
+    1- Variables
+
+D- Módulos de tareas particulares
+    1- Procedimientos invocados desde el módulo principal
+    2- Procedimientos invocados desde otros procedimientos
+
+
+================================================================================
+
+Tipo de dato: Puntero  (1234h)
+
+Tipos Estructurados
+===================
+
+PNodo : ^Nodo
+
+Nodo: Registro
+    info : Entero 2
+    psig : PNodo
+    pant : PNodo
+  FinRegistro
+
+
+Procedimiento
+=============
+
+crearLista(REF turnos : PNodo)
+
+añadirNodo(REF turnos : PNodo, Nodo : PNodo)
+
+borrarNodo(REF turnos :
+
+ordenarLista(REF
+
+filtrarOrdenarImprimir( turnos )
+
+buscarPorDNI(REf
+
+
+
+Variables
+=========
+turnos : PNodo
+
+
+
+
+Lista Siplemente Enlazada:
+
+Turnos ---> Nodo1  ---> Nodo2 ---> Nodo3 ---> Nodo4 ---> Nodo5
+
+
+
+Lista Doblemente Enlazada:
+Turnos ---> Nodo1  ---> Nodo2 ---> Nodo3
+       <---        <---       <---
+
+
+
+================================================================================
+A - Datos de Entorno
+ 1 - Valores Iniciales:
+    Se deben cargar uno por uno los trabajos en reparación, indicando:
+        Tipo de bicicleta (de 1 a 7)
+        Número de Pedido (6 digitos)
+        DNI cliente (8 digitos)
+        Costo de reparación (Real)
+
+ 2 - Especificaciones
+       Si un cliente pasa a buscar su bicicleta y no está terminada, se le debe
+       comunicar cuantos días de demora tiene, y además de debe descontar
+       el 10% al costo de reparación por cada demora.
+
+3 - Datos de entrada para procesar
+       Cada día de atención, cuando llega un cliente, debe ingresarse al
+       programa el número de pedido.
+
+4 - Datos de Salida:
+       Informe A:
+
+       Trabajos entregados con alguna demora
+       =====================================
+    Nro. Pedido | DNI cliente | Total Días de demora  |
+       23       |  12829384   |      3                |
+       50       |  15929384   |      4                |
+       14       |  19838494   |      6                |
+
+
+      Informe B:
+
+      Cantidad de trabajos por tipo de bicicleta
+      ==========================================
+      Tipo    | Entregado Sin Demora    | No retirado al día 30
+        1     |       23
+        2     |                         |
+        3     |                         |
+        4     |                         |
+        5     |                         |
+        6     |                         |
+        7     |                         |
+
+
+Tipos Estructurados
+
+  BICICLETA : Registro /* BICICLETA será el componente principal del campo
+información, del nodo de mi lista simplemente enlazada */
+      tipo : Entero 1 /* Este es el tipo de bicicleta */
+      DNI : Entero 8  /* Este es el DNI del cliente */
+      nroPedido : Entero 6 /* Este será el número para indentificar el pedido */
+      costo : Real 6.2 /* Esto será el costo total de la reparación */
+      entregado : Entero 1 /* 1 Entregado, 0 No entregado, servirá para informe
+B */
+      diasDemo : Entero 3 /* Acumulador de días que fue demorado, Informe A */
+      cantDemo : Entero 3 /* Es la cantidad de veces que fue demorada la entrega
+, Informe A */
+        FinRegistro
+
+  Puntero : ^Nodo /* Puntero es el tipo de dato de cada variable puntero a
+    utilizar en el manejo de la lista de reparaciones */
+
+  Nodo : Registro
+
+         info : BICICLETA /* Diseño del componente de datos del nodo */
+
+         psig : Puntero /* Valor de NIL o la dirección donde se almacena el nodo
+         posterior en la lista */
+
+        FinRegistro
+
+  TIPOBIC : Registro
+      tipo : Entero 1
+      entrSinDemora : Entero 3 /* Contador Informe B */
+      noRetiDia30 : Entero 3 /* Contaodor Informe B */
+      cantTraSolicitados : Entero 3 /* contador Informe B */
+      FinRegistro
+
+  VEC7 : Arreglo 7 : TIPOBIC /* Para contadores de estadísticas bicicletas */
+
+C - Variables
+
+    listaRepara : Puntero
+
+    vecTipos : VEC7 /* Estadísticas bicletas, Informe B */
+
+
+D - Módulos
+
+    P1_CrearLista(REF listaPara : Puntero) /* Objetivo crear la lista de
+    reparaciones */
+    /* Es invocado desde el principal */
+
+    P2_IngresoInicial(REF listaPara : Puntero, vecTipos : VEC7)
+    /* Es invocado desde el principal */
+
+    P3_SimularMes(REF listaPara : Puntero, vecTipos : VEC7)
+
+
+          P4_AtenderCliente(REF ListaPara : Puntero, vecTipos : VEC7)
+
+
+    P5_InformeA(ListaPara : Puntero )
+        Este procedimiento es invocado al final del día 30 del mes, recibe
+        por copia la lista de reparaciones.
+        Debe filtrar la lista, para que deje únicamente aquellos trabajos
+        con demora. Seguidamente debe ordenarla por número DNI ascendente.
+        Finalmente debe imprimir según la tabla dibujada en el inciso
+        Datos de salida Informe A.
+
+    P6_InformeB

@@ -1,0 +1,5 @@
+Aplicar los conceptos de Archivos Secuenciales en la resolución de problemas
+donde tenemos que grabar para actualizar la información. Aplicar los conceptos
+de Archivos de Acceso Directo donde utilizamos las mejoras en el acceso para
+leer y grabar información.
+

@@ -1,0 +1,3 @@
+En estos 2 ejercicios, determinar y explicar las entradas necesarias, las
+salidas deseadas y el proceso que las relaciona ANTES de codificar.
+
