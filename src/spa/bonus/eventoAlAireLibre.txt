@@ -1,0 +1,21 @@
+En un evento al aire libre, el personal de seguridad lleva el control e ingreso
+de los espectadores, los cuales tienen tipos de ubicaciones: A, B y C, de la 
+siguiente forma:
+
+    • Se escanea el QR donde figura el número del ticket y ubicación. Esta
+    información está es una lista previamente cargada de la venta de los 
+    tickets.
+    • Los espectadores que acceden al evento son cargados en una cola de
+    espera.
+    • En el segundo control se habilitan las ubicaciones y la cola de espera,
+    cada espectador se carga en una lista ordenada por ubicación.
+    • Al iniciar el evento no ingresan más espectadores.
+
+1) Desarrollar toda la operatoria del personal de seguridad.
+2) Al iniciar el evento se quiere obtener la siguiente información de control:
+
+    a) Qué porcentaje de espectadores asistieron sobre la venta de los tickets.
+    b) Qué cantidad de espectadores asistieron a cada ubicación.
+
+* el punto 2) debe ser recursivo.
+
